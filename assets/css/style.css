@@ -231,9 +231,9 @@ html-link
 }
 
 /* speech-css */
-.speech-main{
+/* .speech-main{
 background: url(../img/background-speech.jpeg);
-}
+} */
 
 .speech-title{
   margin-top: 80px;
@@ -273,20 +273,46 @@ background: url(../img/background-speech.jpeg);
 
 }
 
-.speech-content{
+/* .speech-content{
   overflow: hidden;
   width: 100%;
-}
-
-.speech-contents-show{
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
+} */
 
 .speech-contents-hide{
   display: none;
 }
+
+button.speech-more{
+  width: 120px;
+margin: 20px auto;
+display: block;
+background-color: #666;
+color: #fff;
+padding:10px 15px;
+border: none;
+outline: 0;
+transition: .5s;
+-erbkit-transition: .5s;
+}
+
+button.speech-more::after {
+  content: "もっと見る";
+  transition: .2s;
+  -erbkit-transition: .2s;
+  }
+  
+  button.speech-more.on-click::after{
+  content: "閉じる";}
+
+
+
+/* .speech-contents-show{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+} */
+
+
 
 .speech-icon{
   width: 100px;
