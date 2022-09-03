@@ -136,6 +136,10 @@ i, .icomoon-liga {
 }
 
 /* top-css */
+
+/*
+seventh-habit
+*/
 .main-section{}
 .seventh-habit{}
 .background{
@@ -166,7 +170,7 @@ i, .icomoon-liga {
 }
 .habit-both-side{
   top: 10%;
-  left: 1%;
+  margin: 0 20px;
   position: absolute;
   display: grid;
   grid-template-columns: repeat(2,1fr);
@@ -184,6 +188,7 @@ i, .icomoon-liga {
   opacity: 0.6;
   border-radius: 16px;
   margin: 15px;
+  letter-spacing: 0.1em;
 }
 .habit-items:hover{
   background-color: #fff;
@@ -191,6 +196,33 @@ i, .icomoon-liga {
 }
 .habit-title{}
 .habit-contents{}
+
+/*
+html-link 
+*/
+.html-link{}
+.link-list{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 18px;
+  width: 90%;
+  margin: 50px 5% 20px;
+  padding-left: 0;
+}
+.link-items{
+  opacity: 0.5;
+  height: 250px;
+
+}
+.link-items.item1{
+  background-color: rgb(120, 241, 146);
+}
+.link-items.item2{
+  background-color: rgb(95, 145, 240);
+}
+.link-items.item3{
+  background-color: rgb(241, 120, 225);
+}
 
 /* speech-css */
 
