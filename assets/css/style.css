@@ -67,10 +67,12 @@ button{
 
 /* footer */
 .footer-under-line{
+  /* position: relative; */
   border: #eee solid 0.1px;
   margin: 60px 0;
 }
 .footer{
+  /* position: absolute; */
   width: 100%;
   text-align: center;
 }
@@ -134,6 +136,61 @@ i, .icomoon-liga {
 }
 
 /* top-css */
+.main-section{}
+.seventh-habit{}
+.background{
+  position: relative;
+  width: 1351px;
+  height: 773px;
+} 
+
+.background img {
+  width: 100%;
+  height: 100%;
+}
+.background::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.top-title{
+  top: 5%;
+  left: 45%;
+  color:#fff;
+  position: absolute;
+  text-align: center;
+}
+.habit-both-side{
+  top: 10%;
+  left: 1%;
+  position: absolute;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+.habit-left-side{
+  margin: auto 0;
+}
+.habit-right-side{
+  margin: auto 0;
+}
+.habit-list{}
+.habit-items{
+  padding: 15px 15px ;
+  background-color: #e9e8e8;
+  opacity: 0.6;
+  border-radius: 16px;
+  margin: 15px;
+}
+.habit-items:hover{
+  background-color: #fff;
+  opacity: 1;
+}
+.habit-title{}
+.habit-contents{}
 
 /* speech-css */
 
