@@ -1,0 +1,134 @@
+body {
+  font-family: "Noto Sans JP", sans-serif;
+}
+li{
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+button{
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+/* header */
+.header-section{
+  width: 100%;
+  top: 0;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  background-color: #fff;
+  justify-content: space-between;
+  z-index: 10;
+}
+.header-logo{
+  padding: 20px 15px;
+}
+.nav-lists{
+  align-items: center;
+  display: flex;
+}
+/* .nav-pages{} */
+.pages-list{
+  display: flex;
+  font-size: 14px;
+  font-weight: bold;
+  gap: 18px;
+}
+.pages-items a{
+  color: #666;
+  letter-spacing: 2px;
+}
+/* .nav-sns{} */
+.sns-list{
+  display: flex;
+  gap: 8px;
+  padding-right:15px;
+}
+.sns-items{
+  margin: 0 10px;
+}
+.sns-items-link{
+  align-items: center;
+  border: solid 1px #eee;
+  border-radius: 50%;
+  color: #adadad;
+  display: inline-flex;
+  font-size: 24px;
+  height: 45px;
+  justify-content: center;
+  width: 45px;
+}
+
+
+/* footer */
+.footer-under-line{
+  border: #eee solid 0.1px;
+  margin: 60px 0;
+}
+.footer{
+  width: 100%;
+  text-align: center;
+}
+.footer-logo{
+  margin: 30px 0;
+}
+.footer-logo img{
+  height: 15%;
+  width: 15%;
+}
+.footer-siteinfo{
+  color: #666;
+  font-size: 14px;
+  margin: 20px 0;
+}
+.footer-sns{
+  padding: 0;
+  margin: 40px 0;
+}
+.footer-sns-items{
+  margin: 0 10px;
+  display: inline-block;
+}
+.copywrite{
+  display: block;
+  text-align: center;
+  margin-bottom: 50px;
+  color: #666;
+  font-size: 12px;
+}
+
+/* 
+icon
+*/
+@font-face {
+  font-display: inline-block;
+  font-family: "posse-icon";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../img/posse-icon.ttf?bbqgr3") format("truetype"), url("../img/posse-icon.woff?bbqgr3") format("woff"), url("../assets/img/posse-icon.svg?bbqgr3#posse-icon") format("svg");
+}
+i, .icomoon-liga {
+  -ms-font-feature-settings: "liga" 1;
+  font-feature-settings: "liga";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "posse-icon" !important;
+  font-style: normal;
+  font-variant: normal;
+  font-variant-ligatures: discretionary-ligatures;
+  font-weight: normal;
+  letter-spacing: 0;
+  line-height: 1;
+  text-transform: none;
+}
+.u-icon-instagram:before {
+  content: "\ea92";
+}
+.u-icon-twitter:before {
+  content: "\ea96";
+}
