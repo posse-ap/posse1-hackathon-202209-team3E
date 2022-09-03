@@ -1,5 +1,5 @@
 body {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
 }
 li{
   list-style: none;
@@ -134,23 +134,22 @@ i, .icomoon-liga {
 }
 
 /* top-css */
-.main-section{}
-.seventh-habit{}
-.background{}
-.habit-both-side{}
-.top-title{}
-.habit-left-side{}
-.habit-right-side{}
-.habit-list{}
-.habit-items{}
-.habit-title{}
-.habit-contents{}
 
 /* speech-css */
 
+.speech-title{
+  margin-top: 80px;
+  text-align: center;
+}
+
+.speech-icon{
+  width: 100px;
+}
+
+.speech-box, .speech-items{
+  display: flex;
+}
 
 /* birthday-css */
 
-
 /* event-css */
-
