@@ -137,18 +137,68 @@ i, .icomoon-liga {
 
 /* speech-css */
 
+
 .speech-title{
   margin-top: 80px;
+  margin-bottom: 60px;
   text-align: center;
+   /* background-color: #cbc7c7;
+  width: 40%;
+  transform: translate(80%,50%);  */
+}
+
+.speech-subtitle{
+  text-indent: 4em;
+  margin-bottom: 30px;
+}
+
+.speech-box{
+  display:  grid;
+  margin-left: 70px;
+  margin-right: 70px;
+  grid-template-columns: repeat(3,1fr);
+
+}
+
+.speech-items{
+  border: 1px solid #333;
+  border-radius: 8px; 
+   margin: 8px;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 2.8fr;
+  background-color: rgb(241, 246, 247);
+  cursor: pointer;
+}
+
+.speech-items:hover{
+  background-color: rgb(219, 234, 241);
+
+}
+
+.speech-content{
+  overflow: hidden;
+  width: 100%;
+}
+
+.speech-contents-show{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.speech-contents-hide{
+  display: none;
 }
 
 .speech-icon{
   width: 100px;
+  border-radius: 25px;
+  /* margin-top: 25px;
+  margin-bottom: 25px; */
 }
 
-.speech-box, .speech-items{
-  display: flex;
-}
+
 
 /* birthday-css */
 
