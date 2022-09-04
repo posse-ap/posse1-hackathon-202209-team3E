@@ -342,20 +342,26 @@
         </div>
       </section>
       <section class="speech-forms">
-        <h1 class="form-title">あなたの100秒スピーチ</h1>
+        <h1 class="form-title">100秒スピーチ投稿フォーム</h1>
         <form class="from">
           <div class="speech-form">
-            <label class="label">名前<span class="required">必須</span></label>
-            <input type="text" name="input" autocomplete="name" placeholder="お名前" required="required"/>
+            <label class="label">名前<span class="required">*</span></label>
+            <div class="input-box">
+              <input class="speech-form border" type="text" name="input" autocomplete="name" placeholder="お名前" required="required"/>
+            </div>
           </div>
 
           <div class="speech-form">
-           <label class="label">テーマ<span class="required">必須</span></label>
-           <input type="text" name="input" autocomplete="name" placeholder="テーマ" required="required"/>
+           <label class="label">テーマ<span class="required">*</span></label>
+           <div class="input-box">
+            <input class="speech-form border" type="text" name="input" autocomplete="name" placeholder="テーマ" required="required"/>
+           </div>
           </div>
           <div class="speech-form">
-            <label class="label">本文<span class="required">必須</span></label>
-            <input type="text" name="input" autocomplete="name" placeholder="本文" required="required"/>
+            <label class="label">本文<span class="required">*</span></label>
+            <div class="input-box">
+              <input class="speech-form border" type="text" name="input" autocomplete="name" placeholder="本文" required="required"/>
+            </div>
           </div>
           <div class="speech-submit">
             <button type="submit">送信する</button>

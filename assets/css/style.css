@@ -550,14 +550,41 @@ button.speech-more::after {
 .form{
   max-width: 600px;
 	margin: 0 auto;
+
+
+}
+
+.speech-forms{
+  margin: 100px 100px 0px 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #C9A3A4;
+  border-radius: 10px;
 }
 
 .speech-form{
-  display: flex;
+  text-align: left ; 
+  padding-top: 20px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  /* display: flex;  */
 	flex-wrap: wrap;
 	justify-content: space-evenly;
-	margin-bottom: 20px;
+  background-color: white;
+  margin: 20px 90px 10px 90px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0px 4px #9b9dc9;
 }
+.speech-form.border{
+  border-bottom: 2px solid gray;
+  width: 700px;
+  border-radius: 0px;
+}
+
+/* .input-box{
+  text-align: left;
+} */
 
 .label,.input{
   padding: 10px;
@@ -565,41 +592,63 @@ button.speech-more::after {
 
 .label{
   width: 90%;
+  font-family: 'Noto Sans JP', sans-serif;
+  /* margin-bottom: 20px;
+  margin-left: 20px;
+  margin-top: 50px; */
+  /* padding-top: 50px; */
+
 }
 
 .input{
+  border: none;
   width: 90%;
 	font-size: 16px;
-  
+  /* border: 10px; */
+  /* margin-right: 100px; */
+  margin-left: 30px;
+
 }
 
 .required {
-  color: #fff;
-	background-color: #C9A3A4;
-	border-radius: 4px;
-	padding: 5px 5px;
-	margin: 0 0 0 15px;
+  color:#c77a7c;
+	/* background-color: #C9A3A4; */
+	/* border-radius: 4px; */
+	/* padding: 0px 0px; */
+	/* margin: 0 0 0 0px; */
+  font-size: 20px;
 }
 
 .speech-submit{
-  font-size: 18px;
+  font-size: 15px;
 	font-weight: bold;
 	color: #fff;
-	background-color: #C9A3A4;
-	border: solid 1px #C9A3A4;
+	background-color: rgb(241, 246, 247);
+	border: solid 1px rgb(219, 234, 241);
 	border-radius: 4px;
-	padding: 5px 32px;
+	padding: 5px 20px;
 	transition: 0.4s;
 	cursor: pointer;
   text-align: center;
+  margin-right: 45%;
+  margin-left: 45%;
 }
 
 .speech-submit:hover {
   background-color: transparent;
 }
 
-.from-title{
-  text-align: center;
+.form-title{
+
+  font-family: 'Noto Sans JP', sans-serif;
+  text-indent: 2em;
+  background-color: white;
+ 
+  margin: 30px 90px 30px 90px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-radius: 10px;
+  background-color: linear-gradient(90deg, #f0bc68 0%, #f0bc68 50%, #c4d7d1 50%, #c4d7d1 100%);
 }
 /* birthday-css */
 
