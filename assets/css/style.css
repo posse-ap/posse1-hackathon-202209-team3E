@@ -499,7 +499,53 @@ humburger-button
   font-weight:500px;
   font-size: 40px;
   border-bottom: 2px solid white;
+}
 
+.speech-items {  
+  display: block;
+  position: relative;
+  margin: 15px auto;
+  padding: 10px 0;
+  width: 300px;
+  background: #f1f1f1;
+  box-sizing: border-box;
+  }
+
+.ribbon15 {  
+  display: inline-block;
+  position: absolute;
+  top: -6px;
+  right: 10px;
+  margin: 0;
+  padding: 10px 0;
+  z-index: 2;
+  width: 40px;
+  text-align: center;
+  color: white;
+  font-size: 17px;
+  background: linear-gradient(#ff785b 0%, #e95738 100%);
+  border-radius: 2px 0 0 0;
+  }
+
+.ribbon15:before {
+  position: absolute;
+  content: '';
+  top: 0;
+  right: -6px;
+  border: none;
+  border-bottom: solid 6px #cf4a2d;
+  border-right: solid 6px transparent;
+}
+.ribbon15:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 100%;
+  height: 0;
+  width: 0;
+  border-left: 20px solid #e95738;
+  border-right: 20px solid #e95738;
+  border-bottom: 10px solid transparent;
 }
 
 .speech-top-img{
