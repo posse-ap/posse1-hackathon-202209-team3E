@@ -369,9 +369,32 @@ button.speech-more::after {
 /* birthday-css */
 
 /* event-css */
+
+.event-top-wapper{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  margin-top: 160px;
+  margin-bottom: 100px;
+  /* display: flex; */
+  background-color: #E8FFEB;
+}
+
+.event-title{
+  margin-top: 40%;
+  margin-bottom: 10%;
+  margin-left: 18%;
+
+
+}
+.event-top-img{
+  margin-right: 60px;
+  width: 800px;
+  height: 100%;
+}
+
 .event-body {
   margin-top: 90px;
-  background:#E8FFEB;
+  background:#fff;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
 }
@@ -554,6 +577,40 @@ button.speech-more::after {
     display: none;
   }
   
+}
+
+.content-left img{
+ width: 450px;
+}
+
+.img-bbq{
+  transform: rotate(-15deg);
+}
+.img-bbq-2{
+  position: absolute;
+}
+.img-bbq-3{
+  position: absolute;
+}
+
+.img-kadachoki {
+ width: 350px;
+}
+
+.img-summerdx {
+  width: 350px;
+}
+
+#meta-date-next{
+ background-color: #adadad;
+}
+
+#article-number-next{
+  color: #adadad;
+}
+
+#timeline-end-next{
+  background: #adadad;
 }
 
 .event-footer {
