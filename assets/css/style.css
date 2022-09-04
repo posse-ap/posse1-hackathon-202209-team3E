@@ -208,26 +208,49 @@ html-link
 .link-list{
   display: grid;
   grid-template-columns: repeat(3,1fr);
-  gap: 18px;
-  width: 90%;
-  margin: 40px 5% 25px;
+  margin: 0;
+  width: 100%;
   padding-left: 0;
 }
+.items-title{
+  border-bottom: 2px solid #fff;
+  margin: 0;
+  color: #fff;
+  font-size: 32px;
+  font-weight: bold;
+  padding-top: 30px;
+}
+.span-arrow{
+  float: right;
+}
+.section-label{
+  display: block;
+  padding:15px 0;
+  color: #fff;
+  float: right;
+  margin-right: 2px;
+  font-weight: bold;
+}
 .link-items{
-  opacity: 0.5;
-  height: 250px;
-  border-radius: 18px;
-  text-align: center;
-  margin: auto 0;
+  height: 450px;
+  text-align: left;
+  padding: 0 20px;
+}
+.link-items:hover{
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+  transition: 0.6s;
+  -ms-filter: "alpha(opacity=70)";
 }
 .link-items.item1{
-  background-color: rgb(120, 241, 146);
+  background-color: #C9A3A4;
 }
 .link-items.item2{
-  background-color: rgb(95, 145, 240);
+  background-color: #A7CEEF;
 }
 .link-items.item3{
-  background-color: rgb(241, 120, 225);
+  background-color:#ACB5AC;
+  /* background-color: #E8FFEB; */
 }
 
 /* speech-css */
