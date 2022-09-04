@@ -453,6 +453,23 @@ humburger-button
     margin-left: 35px; 
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* speech-css */
 
 .speech-top-wapper{
@@ -490,12 +507,20 @@ humburger-button
   height: 100%;
 }
 
+p.button{
+  color: #C9A3A4;
+}
+
+p.button:hover{
+  color: #242424;
+  font-size: large;
+}
+
 
 /* .speech-top-img img{
   display: block;
   width: 100px;
   height: 100px;
-
 } */
 
 .speech-subtitle{
@@ -526,32 +551,31 @@ humburger-button
   background-color: rgb(219, 234, 241);
 }
 
-/* .speech-content{
-  overflow: hidden;
-  width: 100%;
-} */
+.speech-content{
+  /* overflow: hidden; */
 
-.speech-contents-hide{
-  display: none;
-}
-button{
-  cursor: pointer;
-}
-button.more{
+  max-width: ; 
+} 
+ 
+/* .speech-content{
   width: 150px;
   margin: 20px auto;
   display: block;
-
+}  */
+button{
   color: rgb(141, 163, 173);
-  padding:10px 15px;
-  border: none;
+  padding:0px 5px;
+  /* border: none; */
   outline: 0;
   transition: .5s;
   -erbkit-transition: .5s;
+  /* display: none; */
+  cursor: pointer;
 }
 
 
 
+/* 
 button.more::after {
   content: "--もっと見る--";
   transition: .2s;
@@ -560,7 +584,7 @@ button.more::after {
   
 button.more.on-click::after{
   content: "閉じる";
-}
+} */
 
 
 
@@ -610,8 +634,11 @@ button.more.on-click::after{
   box-shadow: 0px 4px #9b9dc9;
 }
 .speech-form.border{
-  border-bottom: 2px solid gray;
-  width: 700px;
+  border-bottom: 1px solid gray;
+  /* width: 700px; */
+  margin-left: 0%;
+  margin-right: 10%;
+  padding-right: 50%;
   border-radius: 0px;
 }
 
@@ -659,7 +686,7 @@ button.more.on-click::after{
 	background-color: rgb(241, 246, 247);
 	border: solid 1px rgb(219, 234, 241);
 	border-radius: 4px;
-	padding: 5px 20px;
+	padding: 20px 20px;
 	transition: 0.4s;
 	cursor: pointer;
   text-align: center;
@@ -681,8 +708,25 @@ button.more.on-click::after{
   padding-top: 30px;
   padding-bottom: 30px;
   border-radius: 10px;
-  background-color: linear-gradient(90deg, #f0bc68 0%, #f0bc68 50%, #c4d7d1 50%, #c4d7d1 100%);
+  /* background-color:linear-gradient(90deg, #f0bc68 0%, #f0bc68 50%, #c4d7d1 50%, #c4d7d1 100%); */
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* birthday-css */
 
 /* event-css */
