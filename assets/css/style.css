@@ -179,13 +179,14 @@ seventh-habit
   background-color: rgba(0, 0, 0, 0.3);
 }
 .top-title{
-  top: 10%;
+  height: 10%;
   right: 20%;
   color:#fff;
   position: absolute;
   text-align: center;
 }
 .habit-both-side{
+  height: 90%;
   top: 10%;
   margin: 0 20px;
   position: absolute;
@@ -297,6 +298,36 @@ html-link
 /* .item-role{} */
 /* .item-currage{} */
 /* .item-entrance{} */
+
+/* 
+html-link-responsive
+*/
+@media screen and (max-width: 720px) {
+  .link-list {
+    display: block;
+  }
+  .link-items{
+    height: 300px;
+    font-size: 80%;
+  }
+  .items-title{
+    font-size: 25px;
+  }
+  .item-box{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+  }
+  .item-content{
+    margin-top: 20%;
+  }
+  .culture-img {
+    width: 180px;
+    height: 180px;
+  }
+}
+/* 
+humburger-button
+*/
 .header-button {
   cursor: pointer;
   height: 40px;
