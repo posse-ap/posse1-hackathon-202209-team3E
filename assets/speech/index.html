@@ -9,17 +9,22 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet">
+  <script src="../../assets/scripts/birthday.js" defer></script>
+  <script src="../../assets/scripts/event.js" defer></script>
+  <script src="../../assets/scripts/speech.js" defer></script>
+  <script src="../../assets/scripts/top.js" defer></script>
 
 <title>speech-page</title>
 </head>
 <body>
 
 <!-- header -->
-  <header>
+  <header class="top-header" id="js-header">
     <div class="header-section">
       <div class="header-logo">
         <img src="../img/logo.png" alt="POSSE">
       </div>
+      <button class="header-button" id="js-headerButton"></button>
       <div class="nav-lists">
         <nav class="nav-pages">
           <ul class="pages-list">
@@ -31,6 +36,9 @@
             </li>
           </ul>
         </nav>
+        <div class="header-official">
+          <a href="https://posse-ap.com/" class="header-official-link-website"><i class="u-icon-link"></i></a>
+        </div>
         <nav class="nav-sns">
           <ul class="sns-list">
             <li class="sns-items">
@@ -363,7 +371,7 @@
   </main>
 
 <!-- footer -->
-  <footer>
+  <footer class="top-footer">
     <div class="footer-under-line"></div>
     
     <section class="footer">

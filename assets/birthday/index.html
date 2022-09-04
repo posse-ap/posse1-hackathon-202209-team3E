@@ -6,16 +6,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../css/reset.css">
   <link rel="stylesheet" href="../css/style.css">
+  <script src="../../assets/scripts/birthday.js" defer></script>
+  <script src="../../assets/scripts/event.js" defer></script>
+  <script src="../../assets/scripts/speech.js" defer></script>
+  <script src="../../assets/scripts/top.js" defer></script>
   <title>birthday-page</title>
 </head>
 <body>
 
 <!-- header -->
-  <header>
+  <header class="top-header" id="js-header">
     <div class="header-section">
       <div class="header-logo">
         <img src="../img/logo.png" alt="POSSE">
       </div>
+      <button class="header-button" id="js-headerButton"></button>
       <div class="nav-lists">
         <nav class="nav-pages">
           <ul class="pages-list">
@@ -27,6 +32,9 @@
             </li>
           </ul>
         </nav>
+        <div class="header-official">
+          <a href="https://posse-ap.com/" class="header-official-link-website"><i class="u-icon-link"></i></a>
+        </div>
         <nav class="nav-sns">
           <ul class="sns-list">
             <li class="sns-items">
@@ -47,7 +55,7 @@
   </main>
 
 <!-- footer -->
-  <footer>
+  <footer class="top-footer">
     <div class="footer-under-line"></div>
     
     <section class="footer">
