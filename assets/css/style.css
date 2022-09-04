@@ -231,18 +231,36 @@ html-link
 }
 
 /* speech-css */
-/* .speech-main{
-background: url(../img/background-speech.jpeg);
-} */
+
+.speech-top-wapper{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  margin-top: 160px;
+  margin-bottom: 100px;
+  /* display: flex; */
+  background-color: #C9A3A4;
+}
 
 .speech-title{
-  margin-top: 80px;
-  margin-bottom: 60px;
-  text-align: center;
-   /* background-color: #cbc7c7;
-  width: 40%;
-  transform: translate(80%,50%);  */
+  margin-top: 40%;
+  margin-bottom: 10%;
+  margin-left: 18%;
+
+
 }
+.speech-top-img{
+  margin-right: 60px;
+  width: 800px;
+  height: 100%;
+}
+
+
+/* .speech-top-img img{
+  display: block;
+  width: 100px;
+  height: 100px;
+
+} */
 
 .speech-subtitle{
   text-indent: 5em;
@@ -294,6 +312,8 @@ outline: 0;
 transition: .5s;
 -erbkit-transition: .5s;
 }
+
+
 
 button.speech-more::after {
   content: "--もっと見る--";
