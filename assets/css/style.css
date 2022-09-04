@@ -156,11 +156,13 @@ seventh-habit
 */
 
 /* .main-section{} */
-/* .seventh-habit{} */
+.seventh-habit{
+  width: 100%;
+}
 .background{
   display: flex;
   position: relative;
-  max-width: 1351px;
+  width: 100%;
   height: 793px;
   margin-top: 64px;
 } 
@@ -179,25 +181,27 @@ seventh-habit
   background-color: rgba(0, 0, 0, 0.3);
 }
 .top-title{
-  height: 10%;
+  height: 30px;
   right: 20%;
   color:#fff;
   position: absolute;
   text-align: center;
 }
 .habit-both-side{
-  height: 90%;
   top: 10%;
   margin: 0 20px;
+  height: 763px;
   position: absolute;
   display: grid;
   grid-template-columns: repeat(2,1fr);
 }
 .habit-left-side{
   margin: auto 0;
+  max-height: 793px;
 }
 .habit-right-side{
   margin: auto 0;
+  max-height: 793px;
 }
 /* .habit-list{} */
 .habit-items{
@@ -416,9 +420,6 @@ humburger-button
   }
 }  
 @media screen and (min-width: 720px) {
-  .footer {
-    padding: 56px 24px 48px;
-  }
   .header-logo {
     width: 148px;
   }
