@@ -774,22 +774,25 @@ button.more::after {
   position: relative;
   width: auto;
   border: 1px solid #ddd;
-  background: radial-gradient(rgb(60, 237, 60)gray);
   box-shadow: 0 1px 3px rgba(51, 49, 37, 0.03);
   padding: 27px 25px;
 }
-.timeline-article top {
+#content-img{
+  background-color:burlywood;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+}
+.timeline-article p {
   margin: 0 0 0 60px;
   padding: 0;
   font-weight: 400;
   color: #242424;
-  font-size: 14px;
+  font-size: 20px;
   line-height: 24px;
   position: relative;
 }
-.timeline-article top span.article-number {
+.timeline-article p span.article-number {
   position: absolute;
-  font-weight: 300;
+  font-weight: 900;
   font-size: 44px;
   top: 10px;
   left: -60px;
@@ -887,17 +890,14 @@ button.more::after {
   .timeline-article top {
     margin: 0;
   }
-  .timeline-article top span.article-number {
+  .timeline-article p span.article-number {
     display: none;
   }
   
 }
 
-.content-left img{
- width: 100%;
- height: 100%;
- object-fit:cover;
-}
+
+
 
 .img-bbq{
   width: 100%;
@@ -942,13 +942,14 @@ button.more::after {
 .balloon1-left {
   position: relative;
   display: inline-block;
-  margin: 1.5em 0 1.5em 15px;
+  margin: 60px 0 0 15px;
   padding: 7px 10px;
   min-width: 120px;
   max-width: 100%;
   color: #555;
-  font-size: 16px;
-  background: #e0edff;
+  font-size: 20px;
+  background: #dbf5d4;
+  border-radius: 5px;
 }
 
 .balloon1-left:before {
@@ -958,10 +959,38 @@ button.more::after {
   left: -30px;
   margin-top: -15px;
   border: 15px solid transparent;
-  border-right: 15px solid #e0edff;
+  border-right: 15px solid #dbf5d4;
 }
 
 .balloon1-left p {
+  margin: 0;
+  padding: 0;
+}
+
+.balloon1-right {
+  position: relative;
+  display: inline-block;
+  margin: 60px 15px 0 0;
+  padding: 7px 10px;
+  min-width: 120px;
+  max-width: 100%;
+  color: #555;
+  font-size: 16px;
+  background: #e0edff;
+  border-radius: 5px;
+}
+
+.balloon1-right:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  margin-top: -15px;
+  border: 15px solid transparent;
+  border-left: 15px solid #e0edff;
+}
+
+.balloon1-right p {
   margin: 0;
   padding: 0;
 }
