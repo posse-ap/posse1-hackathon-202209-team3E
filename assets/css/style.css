@@ -1,5 +1,4 @@
 body {
-  font-family: 'Noto Sans JP', sans-serif;
 }
 li{
   list-style: none;
@@ -288,8 +287,10 @@ html-link
 .speech-top-wapper{
   display: grid;
   grid-template-columns: repeat(2,1fr);
-  margin-top: 160px;
+  margin-top: 100px;
   margin-bottom: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   /* display: flex; */
   background-color: #C9A3A4;
 }
@@ -298,9 +299,20 @@ html-link
   margin-top: 40%;
   margin-bottom: 10%;
   margin-left: 18%;
+  color: white;
+}
 
+.speech-titles{
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.speech-titles-detail{
+  font-weight:500px;
+  font-size: 40px;
+  border-bottom: 2px solid white;
 
 }
+
 .speech-top-img{
   margin-right: 60px;
   width: 800px;
@@ -395,7 +407,60 @@ button.speech-more::after {
 }
 
 
+.form{
+  max-width: 600px;
+	margin: 0 auto;
+}
 
+.speech-form{
+  display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	margin-bottom: 20px;
+}
+
+.label,.input{
+  padding: 10px;
+}
+
+.label{
+  width: 90%;
+}
+
+.input{
+  width: 90%;
+	font-size: 16px;
+  
+}
+
+.required {
+  color: #fff;
+	background-color: #C9A3A4;
+	border-radius: 4px;
+	padding: 5px 5px;
+	margin: 0 0 0 15px;
+}
+
+.speech-submit{
+  font-size: 18px;
+	font-weight: bold;
+	color: #fff;
+	background-color: #C9A3A4;
+	border: solid 1px #C9A3A4;
+	border-radius: 4px;
+	padding: 5px 32px;
+	transition: 0.4s;
+	cursor: pointer;
+  text-align: center;
+}
+
+.speech-submit:hover {
+  background-color: transparent;
+}
+
+.from-title{
+  text-align: center;
+}
 /* birthday-css */
 
 /* event-css */
