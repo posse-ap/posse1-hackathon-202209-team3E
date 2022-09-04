@@ -534,18 +534,20 @@ humburger-button
 .speech-contents-hide{
   display: none;
 }
-
+button{
+  cursor: pointer;
+}
 button.more{
   width: 150px;
-margin: 20px auto;
-display: block;
+  margin: 20px auto;
+  display: block;
 
-color: rgb(141, 163, 173);
-padding:10px 15px;
-border: none;
-outline: 0;
-transition: .5s;
--erbkit-transition: .5s;
+  color: rgb(141, 163, 173);
+  padding:10px 15px;
+  border: none;
+  outline: 0;
+  transition: .5s;
+  -erbkit-transition: .5s;
 }
 
 
@@ -554,10 +556,11 @@ button.more::after {
   content: "--もっと見る--";
   transition: .2s;
   -erbkit-transition: .2s;
-  }
+}
   
-  button.more.on-click::after{
-  content: "閉じる";}
+button.more.on-click::after{
+  content: "閉じる";
+}
 
 
 
