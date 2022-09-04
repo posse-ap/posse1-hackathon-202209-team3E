@@ -6,30 +6,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./assets/css/reset.css">
   <link rel="stylesheet" href="./assets/css/style.css">
+  <script src="./assets/scripts/birthday.js" defer></script>
+  <script src="./assets/scripts/event.js" defer></script>
+  <script src="./assets/scripts/speech.js" defer></script>
+  <script src="./assets/scripts/top.js" defer></script>
   <title>Top-page</title>
 </head>
 <body>
 
 <!-- header -->
-  <header>
-    <div class="footer-under-line"></div>
-
+  <header class="top-header" id="js-header">
     <div class="header-section">
       <div class="header-logo">
         <img src="./assets/img/logo.png" alt="POSSE">
       </div>
+      <button class="header-button" id="js-headerButton"></button>
       <div class="nav-lists">
         <nav class="nav-pages">
           <ul class="pages-list">
             <li class="pages-items">
-              <a href="https://posse-ap.com/">POSSE公式サイト</a>
+              <a href="https://posse-ap.com/" class="pages-items-link">POSSE公式サイト</a>
             </li>
             <li class="pages-items">
-              <a href="./index.html">トップページ</a>
+              <a href="./index.html" class="pages-items-link">トップページ</a>
             </li>
           </ul>
-
         </nav>
+        <div class="header-official">
+          <a href="https://posse-ap.com/" class="header-official-link-website"><i class="u-icon-link"></i></a>
+        </div>
         <nav class="nav-sns">
           <ul class="sns-list">
             <li class="sns-items">
@@ -116,8 +121,8 @@
             <p class="items-title">誕生日<span class="span-arrow">⇒</span></p>
             <span class="section-label">Sect.2</span>
             <div class="item-box">
-              <figure class="img-decorate">
-                <img src="#" alt="">
+              <figure class="culture-img steaker">
+                <img src="./assets/img/hack-steaker.png" alt="">
               </figure>
               <div class="item-content">
               </div>
@@ -147,7 +152,7 @@
   </main>
 
 <!-- footer -->
-  <footer>
+  <footer class="top-footer">
     <div class="footer-under-line"></div>
     
     <section class="footer">
