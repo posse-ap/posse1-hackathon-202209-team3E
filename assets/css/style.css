@@ -283,11 +283,11 @@ background: url(../img/background-speech.jpeg);
 }
 
 button.speech-more{
-  width: 120px;
+  width: 150px;
 margin: 20px auto;
 display: block;
-background-color: #666;
-color: #fff;
+
+color: rgb(141, 163, 173);
 padding:10px 15px;
 border: none;
 outline: 0;
@@ -296,7 +296,7 @@ transition: .5s;
 }
 
 button.speech-more::after {
-  content: "もっと見る";
+  content: "--もっと見る--";
   transition: .2s;
   -erbkit-transition: .2s;
   }
