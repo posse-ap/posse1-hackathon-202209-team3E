@@ -49,6 +49,27 @@
             </li>
           </ul>
         </nav>
+        <div class="overlay">
+          <div class="modal">
+            <div class="modal-content" id="js-modal-content">
+              <button class="modal-close-button js-closeModal">x</button>
+              <!-- modal-change -->
+              <div class="access-record open-record" id="access-record">
+                <span class="record-title">AWESOME!</span>
+                <figure class="icon-check-done">
+                  <img src="../img/icon-check-done.png" alt="">
+                </figure>
+                <span class="record-text">記録・投稿<br>完了しました</span>
+              </div>
+              <!-- record-modal -->
+              
+              <div class="loading open-loading" id="loading">
+                <div class="circle"></div>
+              </div>
+              <!-- loading-modal -->
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </header>
@@ -73,7 +94,7 @@
             <figure>
               <img class="speech-icon" src="../img/yuta.honnjyo-speech.png" alt="">
             </figure>
-            <span class="ribbon15">★</span>
+            <span class="ribbon15">NEW</span>
             <div class="speech-content">
               <h3>本庄裕大</h3>
               <div class="speech-contents">まず最初に僕はを「仲間の居場所を作るサポートせずして自分の居場所なし」と
@@ -93,7 +114,8 @@
                 第二段階から第三段階はそれぞれの個人が自分で役割を見つけるものだと思います。
                 皆さんにとってPOSSEでの活動が最優先事項かはわかりませんが、POSSE内での自分の役割を考えてみてはいかがでしょうか？その最初のステップとしてカリキュラムに遅れないというのがあります。POSSEには第一段階から第二段階に引き上げてくれる頼れる同期や先輩がたくさんいます。頼りまくってください。
               </div>
-              <p class="button">--もっと見る--</p>
+              <p class="button" id="ribbonSwitch
+              ">--もっと見る--</p>
               <!-- <button class="more"></button> -->
             </div>
           </div>
@@ -102,7 +124,7 @@
             <figure>
               <img class="speech-icon" src="../img/hiroki.ogawa-speech.jpeg" alt="">
             </figure>
-            <span class="ribbon15">★</span>
+            <span class="ribbon15">NEW</span>
             <div class="speech-content">
               <h3>小川ひろき</h3>
               <p class="speech-contents">
@@ -121,7 +143,7 @@
             <figure>
               <img class="speech-icon" src="../img/yuma.tukagaoshi-speech.png" alt="">
             </figure>
-            <span class="ribbon15">★</span>
+            <span class="ribbon15">NEW</span>
             <div  class="speech-content">
               <h3>塚越雄真</h3>
               <p class="speech-contents">「
@@ -159,7 +181,7 @@
             <figure>
               <img class="speech-icon" src="../img/chiyoko.hayashi-speech.png" alt="">
             </figure>
-            <span class="ribbon15">★</span>
+            <span class="ribbon15">NEW</span>
             <div  class="speech-content">
               <h3>林千翼子</h3>
               <p class="speech-contents">教えることは教わること
@@ -181,7 +203,7 @@
             <figure>
               <img class="speech-icon" src="../img/kazuki.iwashiro-speech.jpeg" alt="">
             </figure>
-            <span class="ribbon15">★</span>
+            <span class="ribbon15">NEW</span>
             <div class="speech-content">
               <h3>岩城和輝</h3>
               <p class="speech-contents">教えることは教わること
@@ -213,7 +235,7 @@
             <figure>
               <img class="speech-icon" src="../img/michiko.noro-speech.jpeg" alt="">
             </figure>
-            <span class="ribbon15">★</span>
+            <span class="ribbon15">NEW</span>
             <div  class="speech-content">
               <h3>野呂美智子</h3>
               <p class="speech-contents">
@@ -253,7 +275,7 @@
             <figure>
               <img class="speech-icon" src="../img/ayumi.fujii-speech.png" alt="">
             </figure>
-            <span class="ribbon15">★</span>
+            <span class="ribbon15">NEW</span>
             <div  class="speech-content">
               <h3>藤井愛弓</h3>
                 <p class="speech-contents">「本音の対話なくして最高のチームなし」私自身、本音の対話がとっても苦手。気になることがあっても、反対して相手に嫌な思いをさせたくないな、嫌われたくないな、で話せないことが多い。
@@ -283,7 +305,7 @@
             <figure>
               <img class="speech-icon" src="../img/yudai.inose-speech.png" alt="">
             </figure>
-            <span class="ribbon15">★</span>
+            <span class="ribbon15">NEW</span>
             <div class="speech-content">
               <h3>猪瀬雄大</h3>
               <p class="speech-contents">本音の対話なくして最高のチームなし
@@ -325,7 +347,7 @@
           <div class="speech-items">
             <figure>
               <img class="speech-icon" src="../img/gaku.inoue-speech.png" alt="">
-              <span class="ribbon15">★</span>
+              <span class="ribbon15">NEW</span>
             </figure>
             <div  class="speech-content">
               <h3>井上岳</h3>
@@ -373,7 +395,7 @@
             </div>
           </div>
           <div class="speech-submit">
-            <button type="submit">送信する</button>
+            <button class="js-openModal" id="record-modalButton">送信する</button>
           </div>
         </form>
       </section>
