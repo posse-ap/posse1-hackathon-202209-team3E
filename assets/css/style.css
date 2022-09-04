@@ -462,8 +462,8 @@ humburger-button
   grid-template-columns: repeat(2,1fr);
   margin-top: 100px;
   margin-bottom: 100px;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 80px;
+  padding-bottom: 80px;
   /* display: flex; */
   background-color: #C9A3A4;
 }
@@ -534,7 +534,7 @@ humburger-button
 
 .speech-top-img{
   margin-right: 60px;
-  width: 800px;
+  width: 700px;
   height: 100%;
 }
 
@@ -544,7 +544,7 @@ p.button{
 
 p.button:hover{
   color: #242424;
-  font-size: large;
+  font-size: 17px;
 }
 
 
@@ -755,6 +755,71 @@ button.more.on-click::after{
 
 
 /* birthday-css */
+
+.birthday-top-wapper{
+  background-color: #A7CEEF;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  margin-top: 100px;
+  margin-bottom: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  /* display: flex; */
+}
+
+.birthday-bothside{
+  display: flex;
+  /* text-align: center; */
+}
+
+.birthday-leftside{
+  margin: auto 0;
+  margin-left: px;
+}
+
+.birthday-rightside{
+  margin: auto 0;
+  margin-left: 200px;
+}
+
+.birthday-card{
+  width: 400px;
+  height: 100%;
+  /* margin-right: 11%; */
+}
+
+.card-title{
+  text-indent: 2em;
+}
+
+.birthday-set{
+  /* background-color: #A7CEEF; */
+  /* display: grid;
+  grid-template-columns: 3fr,5fr; */
+}
+
+.birthday-item{
+  margin-bottom: 30%;
+  margin-left: 7%;
+  margin-right: 7%;
+  background-color: #A7CEEF;
+  border-radius: 10px;
+  padding: 20px 60px 15px 20px;
+}
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* event-css */
 
