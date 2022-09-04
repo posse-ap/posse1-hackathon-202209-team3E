@@ -326,7 +326,7 @@ button.speech-more::after {
 /* birthday-css */
 
 /* event-css */
-body {
+.event-body {
   margin-top: 90px;
   background:#E8FFEB;
   font-family: "Roboto", sans-serif;
@@ -511,5 +511,15 @@ body {
     display: none;
   }
   
+}
+
+.event-footer {
+  z-index: 100;
+  background-color:#fff;
+}
+
+.footer-sns.event{
+ margin-bottom: 0ch;
+ padding-bottom: 10px;
 }
 /*===== // Resonsive Vertical Timeline =====*/
