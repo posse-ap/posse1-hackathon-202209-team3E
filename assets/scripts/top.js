@@ -7,6 +7,4 @@
     Header.classList.toggle('is-open')
   })
 
-  
-
 }
