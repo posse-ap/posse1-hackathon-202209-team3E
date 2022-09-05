@@ -13,7 +13,7 @@
         setTimeout(function() {
             $(".link-list").eq(i).addClass("fade-in-left");
         }, 100 * i);
+      });
     });
-    });
-});
+  });
 }
