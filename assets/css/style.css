@@ -1173,7 +1173,24 @@ button{
 .main-below-text{
   padding-top: 10%;
 }
-
+@media screen and (max-width: 720px) {
+  .birthday-top-wapper{
+    display: block; 
+    padding-top: 20px;
+  }
+  .birthday-top-img {
+    width: 600px;
+    height: 500px;
+  }
+  .speech-titles{
+    font-size: 80%;
+    margin-top: 15%;
+  }
+  .speech-titles-detail{
+    top: 10%;
+    font-size: 23px;
+  }
+}
 
 /* event-css */
 
