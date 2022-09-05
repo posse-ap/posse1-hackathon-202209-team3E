@@ -713,7 +713,7 @@ humburger-button
 
 .speech-titles-detail{
   font-weight:500px;
-  font-size: 40px;
+  font-size: 38px;
   border-bottom: 2px solid white;
 }
 .speech-section{
@@ -926,14 +926,11 @@ button{
     margin-top: 15%;
   }
   .speech-form{
-    margin: 5px 50px 5px 50px;
+    margin: 15px 50px 15px 50px;
   }
   .speech-titles-detail{
     top: 10%;
     font-size: 23px;
-  }
-  .speech-items{
-    display: block;
   }
   .speech-subtitle{
     font-size: 16px;
@@ -945,6 +942,12 @@ button{
 
   .form-title{
     font-size: 20px;
+  }
+  .speech-box{
+    display: block;
+  }
+  .speech-items{
+    margin: 20px 0 0 10px ;
   }
 }
 
