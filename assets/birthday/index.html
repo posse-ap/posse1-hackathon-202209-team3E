@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet">
+  <script src="../scripts/jquery-3.6.1.min.js" defer></script>
+  <script src="../../assets/scripts/birthday.js" defer></script>
+  <script src="../../assets/scripts/event.js" defer></script>
+  <script src="../../assets/scripts/speech.js" defer></script>
+  <script src="../../assets/scripts/top.js" defer></script>
+  <title>birthday-page</title>
+</head>
+<body>
+
+<!-- header -->
+  <header class="top-header" id="js-header">
+    <div class="header-section">
+      <div class="header-logo">
+        <img src="../img/logo.png" alt="POSSE">
+      </div>
+      <button class="header-button" id="js-headerButton"></button>
+      <div class="nav-lists">
+        <nav class="nav-pages">
+          <ul class="pages-list">
+            <li class="pages-items">
+              <a href="https://posse-ap.com/">POSSE公式サイト</a>
+            </li>
+            <li class="pages-items">
+              <a href="../../index.html">トップページ</a>
+            </li>
+            <li class="pages-items">
+              <a href="../speech/index.html">100秒スピーチ</a>
+            </li>
+            <li class="pages-items">
+              <a href="../birthday/index.html">誕生日</a>
+            </li>
+            <li class="pages-items">
+              <a href="../event/index.html">リアルイベント</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header-official">
+          <a href="https://posse-ap.com/" class="header-official-link-website"><i class="u-icon-link"></i></a>
+        </div>
+        <nav class="nav-sns">
+          <ul class="sns-list">
+            <li class="sns-items">
+              <a href="https://twitter.com/posse_program" target="_blank" class="sns-items-link"><i class="u-icon-twitter"></i></a>
+            </li>
+            <li class="sns-items">
+              <a href="https://www.instagram.com/posse_programming/" target="_blank" class="sns-items-link"><i class="u-icon-instagram"></i></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+<!-- main -->
+  <main>
+    <article class="main-wapper">
+      <div class="birthday-top-wapper">
+        <div  class="speech-title">
+          <h1 class="speech-titles-detail">メンバーの誕生を祝おう</h1>
+          <h2 class="speech-titles">バースデイスライド</h2>
+        </div>
+        <figure>
+          <img class="birthday-top-img" src="../img/birthday-top-img.png" alt="">
+        </figure>
+      </div>
+
+      <!-- <div class="hidden-box">
+        <label for="label1">クリックして表示</label>
+        <input type="checkbox" id="label1"/>
+        <div class="hidden-show">
+            
+            <p><img src="../img/000000017825.jpeg"></p>
+          
+        </div>
+      </div> -->
+
+
+      <div class="birthday-bothside">
+       <div class="birthday-leftside">
+          <ul class="birthday-set">
+
+            <div class="hidden-box left-side"> 
+              <label for="label1">
+                <li class="birthday-item">
+                  <h2 class="card-title">01</h2>
+                </li>
+              </label>
+              <input type="checkbox" id="label1"/>
+              <div class="hidden-show">
+                <div class="background-birth">
+                  <p class="birthday-detail1">🎍JANUARY🎍<br>
+                    04   森本 健介<br>
+                    09   江口 遥<br>
+                    14   遠藤 愛期<br>
+                    17   影嶋亮太朗<br>
+                    24   下鳥 文也<br>
+                    26    信田健児さん
+                  <p class="birthday-detail1">
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="hidden-box left-side"> 
+              <label for="label3">
+                <li class="birthday-item">
+                  <h2 class="card-title">03</h2>
+                </li>
+              </label>
+              <input type="checkbox" id="label3"/>
+              <div class="hidden-show">
+                <div class="background-birth">
+                  <p class="birthday-detail1">
+                    🎎3月🎎<br>
+                    03 橋本 竜一<br>
+                    13 ノブさん<br>
+                    26 笠原 美月<br>
+                    26 上野 侑紗<br>
+                    28 三木 咲乃
+                  </p>
+                </div>
+            </div>
+            </div>
+
+            <div class="hidden-box left-side"> 
+              <label for="label5">
+                <li class="birthday-item">
+                  <h2 class="card-title">05</h2>
+                </li>
+              </label>
+              <input type="checkbox" id="label5"/>
+              <div class="hidden-show">
+                <div class="background-birth">
+                  <p class="birthday-detail1">
+                    🎏5月🎏<br>
+                    01  石田 まゆな<br>
+                    13  山寺 伶奈<br>
+                    24  岩木 さら<br>
+                    28 中澤 和貴
+                  </p>
+                </div>
+            </div>
+            </div>
+            <div class="hidden-box left-side"> 
+              <label for="label7">
+                <li class="birthday-item">
+                  <h2 class="card-title">07</h2>
+                </li>
+              </label>
+              <input type="checkbox" id="label7"/>
+              <div class="hidden-show">
+                <div class="background-birth">
+                  <p class="birthday-detail1">
+                    🎋7月🎋<br>
+                    04 松本 透歩<br>
+                    05 佐藤 大暉<br>
+                    13 百済 恵太<br>
+                    16  繁田 いろは<br>
+                    19  葛西 志保<br>
+                    24  栗原 大輝<br>
+                    24  土屋 一貴
+                  </p>
+                </div>
+            </div>
+            </div>
+            <div class="hidden-box left-side"> 
+              <label for="label9">
+                <li class="birthday-item">
+                  <h2 class="card-title">09</h2>
+                </li>
+              </label>
+              <input type="checkbox" id="label9"/>
+              <div class="hidden-show">
+                <div class="background-birth">
+                  <p class="birthday-detail1">
+                    🐻9月🐻<br>
+                    02   武田 龍一<br>
+                    10 <a href="#youhei-tanaka"> 田中 陽平<br></a>
+                    10  塚越 雄真<br>
+                    10  境 陽乃美<br>
+                    12  神野 豪気<br>
+                    15  藤間 裕史<br>
+                    21  東 穂
+                  </p>
+                </div>
+            </div>
+            </div>
+            <div class="hidden-box left-side"> 
+              <label for="label11">
+                <li class="birthday-item">
+                  <h2 class="card-title">11</h2>
+                </li>
+              </label>
+              <input type="checkbox" id="label11"/>
+              <div class="hidden-show">
+                <div class="background-birth">
+                  <p class="birthday-detail1">🌍11月🌍<br>
+                    13 檀野 たいき<br>
+                    15 窪田 美怜<br>
+                    17 奥田 知輝<br>
+                    17 鶴 綾乃<br>
+                    22 福場 脩真<br>
+                    22 野呂 美智子<br>
+                    28 井戸 宗達<br>
+                    29 大西 美海
+                  </p>
+                </div>
+            </div>
+            </div>
+
+          </ul>
+        </div>
+        <div class="birthday-rightside">
+          <ul class="birthday-set">
+
+            
+            <div class="hidden-box">
+              <input type="checkbox" id="label2"/>
+              <div class="hidden-show">
+                <div class="background-birth">
+                <p class="birthday-detail1">☃️FEBRUARY☃️<br>
+                  07 平野 隆二<br>
+                  11 鈴木 萌衣<br>
+                  12 齋藤 邦彦<br>
+                  16 小川 広樹<br>
+                  23 藤井 愛弓<br>
+                  27 本城 裕</p>
+              </div>
+              </div>
+              <label for="label2">
+                    <li class="birthday-item">
+                    <h2 class="card-title">02</h2>
+                  </li>
+                </label>
+            </div>
+
+            <div class="hidden-box">
+              <input type="checkbox" id="label4"/>
+              <div class="hidden-show">
+                <div class="background-birth">
+                <p class="birthday-detail1">🌸4月🌸<br>
+                  06 湯山 智春<br>
+                  08 石川 朝香<br>
+                  14 高橋 日菜<br>
+                  20 山岸 涼<br>
+                  24 香取 龍成</p>
+              </div>
+              </div>
+              <label for="label4">
+                    <li class="birthday-item">
+                    <h2 class="card-title">                    04</h2>
+                  </li>
+                </label>
+            </div>
+
+           <div class="hidden-box">
+              <input type="checkbox" id="label6"/>
+              <div class="hidden-show">
+                <div class="background-birth">
+                <p class="birthday-detail1">☃️🌂6月🌂<br>
+                  01 石井 潤<br>
+                                      04 三木 晴加<br>
+                  09 森 遥<br>
+                  10 五十嵐 佳貴<br>
+                  10 穴田 竜大<br>
+                  14 橋本 満さん<br>
+                  18 武井 香奈子</p>
+              </div>
+              </div>
+              <label for="label6">
+                    <li class="birthday-item">
+                    <h2 class="card-title">06</h2>
+                  </li>
+                </label>
+            </div>
+
+           <div class="hidden-box">
+              <input type="checkbox" id="label8"/>
+              <div class="hidden-show">
+                <div class="background-birth">
+                <p class="birthday-detail1">🦋8月🦋<br>
+                  02 生川 美羽 <br>
+                  21 猪瀬 雄大<br>
+                  24 小谷悠一さん<br>
+                  27 木村 宥哉<br>
+                  31 古屋 美羽</p>
+              </div>
+              </div>
+              <label for="label8">
+                    <li class="birthday-item">
+                    <h2 class="card-title">08</h2>
+                  </li>
+                </label>
+            </div>
+
+           <div class="hidden-box">
+              <input type="checkbox" id="label10"/>
+              <div class="hidden-show">
+                <div class="background-birth">
+                <p class="birthday-detail1">🌙10月🌙<br>
+                  06 大須賀 博紀<br>
+                  09 尾関 なな海<br>
+                  10 林 千翼子<br>
+                  10 村田 将太郎<br>
+                  23 岩城 和輝<br>
+                  27 飯田 紅葉<br>
+                  31 井上 岳<br>
+                  31 中村 颯</p>
+              </div>
+              </div>
+              <label for="label10">
+                    <li class="birthday-item">
+                    <h2 class="card-title">10</h2>
+                  </li>
+                </label>
+            </div>
+
+           <div class="hidden-box">
+              <input type="checkbox" id="label12"/>
+              <div class="hidden-show">
+                <div class="background-birth">
+                <p class="birthday-detail1">🎄12月🎄<br>
+                  06 関根 大晟<br>
+                  15 平手 美羽<br>
+                  17 藤吉 彩花<br>
+                  21 千羽 茉莉愛<br>
+                  29 新島 駿<br>
+                  30 小野 媛乃<br>
+                  31 小堺 真季子</p>
+              </div>
+              </div>
+              <label for="label12">
+                    <li class="birthday-item">
+                    <h2 class="card-title">12</h2>
+                  </li>
+                </label>
+            </div>
+
+          </ul>
+        </div>
+      </div>
+      <div class="main-second">            
+        <div class="main-below">
+         <h2 id="youhei-tanaka">田中 陽平</h2>
+
+
+      <div class="main-below-below">
+      <figure><img class="birthday-cards" src="../img/youhei-tanaka-birthday.jpeg" alt=""></figure>
+      <div main-below-text>陽平へ
+        少し早いけど誕生日おめでとう！
+        前回のハッカソンフェスでは陽平と同じチームになって、一緒にコード書いたり喋ったりできて嬉しかった！それまで陽平とはちゃんと話したことなくて、僕に興味ないからかなと思ってたんだけど、実際に話してみると傾聴はするし賢いし面白い人だったね。ハッカソン中に2人で銭湯に行った時も歩きながら制作物のことを考えていて、そうした熱心に取り組んでいる姿も素敵だったよ。素敵なのはそれだけではなく、ゴルフ、サッカー、釣りなど趣味が多岐に渡っていること、POSSE以外にもゼミやインターンなどいろんなことに取り組んでいることも挙げられます。そんな多才な陽平だけど、言葉遣いが巧みで一部の女子が虜になってるみたいなので、まだ話したことない女子はぜひ彼に話しかけてみましょう。ところで最近ハワイに行ってきたようだけど、ストーリーがゴルフ場とカメレオンだったので、美味しかったものや他に行って楽しかったところがあれば教えてください。あと今年の抱負も聞きたいです。
+        長くなったけどこの1年が、陽平が幸せになってその幸せが周りに良い影響を与えるような1年になることを願っております！誕生日おめでとう！
+        </div>
+      </div>
+      </div>
+    </div>
+
+    </div>
+    </article>
+  </main>
+
+<!-- footer -->
+  <footer class="top-footer">
+    <div class="footer-under-line"></div>
+    
+    <section class="footer">
+      <div class="footer-logo">
+        <img src="../img/logo.png" alt="POSSE">
+      </div>
+      <div><a href="https://posse-ap.com/" target="_blank" class="footer-siteinfo">POSSE公式サイト</a></div>
+      <ul class="footer-sns">
+        <li class="footer-sns-items">
+          <a href="https://twitter.com/posse_program" target="_blank" class="sns-items-link"><i class="u-icon-twitter"></i></a>
+        </li>
+        <li class="footer-sns-items">
+          <a href="https://www.instagram.com/posse_programming/" target="_blank" class="sns-items-link"><i class="u-icon-instagram"></i></a>
+        </li>
+      </ul>
+    </section>
+  </footer>
+  
+</body>
+</html>

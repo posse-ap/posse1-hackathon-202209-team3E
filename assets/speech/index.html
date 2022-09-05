@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet">
+  <script src="../scripts/jquery-3.6.1.min.js" defer></script>
+  <script src="../../assets/scripts/birthday.js" defer></script>
+  <script src="../../assets/scripts/event.js" defer></script>
+  <script src="../../assets/scripts/speech.js" defer></script>
+  <script src="../../assets/scripts/top.js" defer></script>
+<title>speech-page</title>
+</head>
+<body>
+
+<!-- header -->
+  <header class="top-header" id="js-header">
+    <div class="header-section">
+      <div class="header-logo">
+        <img src="../img/logo.png" alt="POSSE">
+      </div>
+      <button class="header-button" id="js-headerButton"></button>
+      <div class="nav-lists">
+        <nav class="nav-pages">
+          <ul class="pages-list">
+            <li class="pages-items">
+              <a href="https://posse-ap.com/">POSSE公式サイト</a>
+            </li>
+            <li class="pages-items">
+              <a href="../../index.html">トップページ</a>
+            </li>
+            <li class="pages-items">
+              <a href="../speech/index.html">100秒スピーチ</a>
+            </li>
+            <li class="pages-items">
+              <a href="../birthday/index.html">誕生日</a>
+            </li>
+            <li class="pages-items">
+              <a href="../event/index.html">リアルイベント</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header-official">
+          <a href="https://posse-ap.com/" class="header-official-link-website"><i class="u-icon-link"></i></a>
+        </div>
+        <nav class="nav-sns">
+          <ul class="sns-list">
+            <li class="sns-items">
+              <a href="https://twitter.com/posse_program" target="_blank" class="sns-items-link"><i class="u-icon-twitter"></i></a>
+            </li>
+            <li class="sns-items">
+              <a href="https://www.instagram.com/posse_programming/" target="_blank" class="sns-items-link"><i class="u-icon-instagram"></i></a>
+            </li>
+          </ul>
+        </nav>
+        <div class="overlay">
+          <div class="modal">
+            <div class="modal-content" id="js-modal-content">
+              <button class="modal-close-button js-closeModal">x</button>
+              <!-- modal-change -->
+              <div class="access-record open-record" id="access-record">
+                <span class="record-title">AWESOME!</span>
+                <figure class="icon-check-done">
+                  <img src="../img/icon-check-done.png" alt="">
+                </figure>
+                <span class="record-text">記録・投稿<br>完了しました</span>
+              </div>
+              <!-- record-modal -->
+              
+              <div class="loading open-loading" id="loading">
+                <div class="circle"></div>
+              </div>
+              <!-- loading-modal -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+<!-- main -->
+  <main class="speech-main">
+    <article class="main-wapper">
+      <div class="speech-top-wapper">
+        <div  class="speech-title">
+          <h1 class="speech-titles-detail">メンバーと価値観共有</h1>
+          <h2 class="speech-titles">100秒スピーチ</h2>
+        </div>
+        <figure>
+          <img class="speech-top-img" src="../img/speech-top.jpg" alt="">
+        </figure>
+      </div>
+
+      <section class="speech-section">
+        <h2 class="speech-subtitle">《仲間の居場所を作らずして自分の居場所なし》</h2>
+        <div class="speech-box">
+          <div class="speech-items">
+            <figure>
+              <img class="speech-icon" src="../img/yuta.honnjyo-speech.png" alt="">
+            </figure>
+            <span class="ribbon15" id="speech1">NEW</span>
+            <div class="speech-content">
+              <h3>本庄裕大</h3>
+              <p class="speech-contents">
+                スピーチ内容記述
+              </p>
+              <p class="button" id="ribbonSwitch
+              ">--もっと見る--</p>
+              <input type="checkbox" id="like"><label for="like"><svg class="speech-heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg></label>
+            </div>
+          </div>
+
+          <div class="speech-items">
+            <figure>
+              <img class="speech-icon" src="../img/hiroki.ogawa-speech.jpeg" alt="">
+            </figure>
+            <span class="ribbon15" id="speech2">NEW</span>
+            <div class="speech-content">
+              <h3>小川広樹</h3>
+              <p class="speech-contents">
+                スピーチ内容記述
+              </p>
+              <p class="button">--もっと見る--</p>
+              <input type="checkbox" id="like"><label for="like"><svg class="speech-heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg></label>
+            </div>
+          </div>
+
+          <div class="speech-items">
+            <figure>
+              <img class="speech-icon" src="../img/yuma.tukagaoshi-speech.png" alt="">
+            </figure>
+            <span class="ribbon15" id="speech3">NEW</span>
+            <div  class="speech-content">
+              <h3>塚越雄真</h3>
+              <p class="speech-contents">
+                スピーチ内容記述
+              </p>
+              <p class="button">--もっと見る--</p>
+              <input type="checkbox" id="like"><label for="like"><svg class="speech-heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg></label>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="speech-section">
+        <h2 class="speech-subtitle">《教えることは教わること》</h2>
+        <div class="speech-box"> 
+        <div class="speech-items">
+            <figure>
+              <img class="speech-icon" src="../img/chiyoko.hayashi-speech.png" alt="">
+            </figure>
+            <span class="ribbon15" id="speech4">NEW</span>
+            <div  class="speech-content">
+              <h3>林千翼子</h3>
+              <p class="speech-contents">
+                スピーチ内容記述
+              </p>
+              <p class="button">--もっと見る--</p>
+              <input type="checkbox" id="like"><label for="like"><svg class="speech-heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg></label>
+            </div>
+          </div>
+          <div class="speech-items">
+            <figure>
+              <img class="speech-icon" src="../img/kazuki.iwashiro-speech.jpeg" alt="">
+            </figure>
+            <span class="ribbon15" id="speech5">NEW</span>
+            <div class="speech-content">
+              <h3>岩城和輝</h3>
+              <p class="speech-contents">
+                スピーチ内容記述
+              </p>
+              <p class="button">--もっと見る--</p>
+              <input type="checkbox" id="like"><label for="like"><svg class="speech-heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg></label>
+            </div>
+          </div>
+
+          <div class="speech-items">
+            <figure>
+              <img class="speech-icon" src="../img/michiko.noro-speech.jpeg" alt="">
+            </figure>
+            <span class="ribbon15" id="speech6">NEW</span>
+            <div  class="speech-content">
+              <h3>野呂美智子</h3>
+              <p class="speech-contents">
+                スピーチ内容記述
+              </p>
+              <p class="button">--もっと見る--</p>
+              <input type="checkbox" id="like"><label for="like"><svg class="speech-heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg></label>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="speech-section">
+        <h2 class="speech-subtitle">《本音の対話なくして最高のチームなし》</h2>
+        <div class="speech-box"> 
+          <div class="speech-items">
+            <figure>
+              <img class="speech-icon" src="../img/ayumi.fujii-speech.png" alt="">
+            </figure>
+            <span class="ribbon15" id="speech7">NEW</span>
+            <div  class="speech-content">
+              <h3>藤井愛弓</h3>
+                <p class="speech-contents">
+                  スピーチ内容記述
+                </p>
+                <p class="button">--もっと見る--</p>
+                <input type="checkbox" id="like"><label for="like"><svg class="speech-heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg></label>
+            </div>
+          </div>
+          <div class="speech-items">
+            <figure>
+              <img class="speech-icon" src="../img/yudai.inose-speech.png" alt="">
+            </figure>
+            <span class="ribbon15" id="speech8">NEW</span>
+            <div class="speech-content">
+              <h3>猪瀬雄大</h3>
+              <p class="speech-contents">
+                スピーチ内容記述
+              </p>
+              <p class="button">--もっと見る--</p>
+              <input type="checkbox" id="like"><label for="like"><svg class="speech-heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg></label>
+
+            </div>
+          </div>
+
+          <div class="speech-items">
+            <figure>
+              <img class="speech-icon" src="../img/gaku.inoue-speech.png" alt="">
+              <span class="ribbon15" id="speech9">NEW</span>
+            </figure>
+            <div  class="speech-content">
+              <h3>井上岳</h3>
+              <p class="speech-contents">
+                スピーチ内容記述
+              </p>
+              <p class="button">--もっと見る--</p>
+              <input type="checkbox" id="like"><label for="like"><svg class="speech-heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg></label>
+
+          </div>
+        </div>
+      </section>
+      <section class="speech-forms">
+        <h1 class="form-title">100秒スピーチ投稿フォーム</h1>
+        <form class="from" onsubmit="return false;" name="input">
+          <div class="speech-form">
+            <label class="label">名前<span class="required">*</span></label>
+            <div class="input-box">
+              <input class="speech-form border" type="text"  autocomplete="name" placeholder="お名前" id="text"/>
+            </div>
+          </div>
+
+          <div class="speech-form">
+            <label class="label">テーマ<span class="required">*</span></label>
+            <div class="input-box">
+              <input class="speech-form border" type="text"  autocomplete="name" placeholder="テーマ" id="text" />
+            </div>
+          </div>
+          <div class="speech-form">
+            <label class="label">本文<span class="required">*</span></label>
+            <div class="input-box">
+              <input class="speech-form border" type="text"  autocomplete="name" placeholder="本文"/>
+            </div>
+          </div>
+          <div class="speech-submit js-openModal" id="record-modalButton">
+            <button type="button" class="js-openModal" id="record-modalButton" onclick="reset()">送信する</button>
+          </div>
+        </form>
+      </section>
+    </article>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+  </main>
+
+<!-- footer -->
+  <footer class="top-footer">
+    <div class="footer-under-line"></div>
+    
+    <section class="footer">
+      <div class="footer-logo">
+        <img src="../img/logo.png" alt="POSSE">
+      </div>
+      <div><a href="https://posse-ap.com/" target="_blank" class="footer-siteinfo">POSSE公式サイト</a></div>
+      <ul class="footer-sns">
+        <li class="footer-sns-items">
+          <a href="https://twitter.com/posse_program" target="_blank" class="sns-items-link"><i class="u-icon-twitter"></i></a>
+        </li>
+        <li class="footer-sns-items">
+          <a href="https://www.instagram.com/posse_programming/" target="_blank" class="sns-items-link"><i class="u-icon-instagram"></i></a>
+        </li>
+      </ul>
+    </section>
+  </footer>
+  
+</body>
+</html>
