@@ -441,17 +441,17 @@ html-link
 .culture-img.hina-san{
   border-radius: 50%;
   border: 8px solid #fff;
-  /* border: 6px solid #73be73; */
+  /* border: 8px solid #73be73; */
 }
 .culture-img.steaker{
   border-radius: 50%;
   border: 8px solid #fff;
-  /* border: 6px solid #53a6eb; */
+  /* border: 8px solid #53a6eb; */
 }
 .culture-img.mrp-san{
   border-radius: 50%;
   border: 8px solid #fff;
-  /* border: 6px solid #c77a7c; */
+  /* border: 8px solid #c77a7c; */
 }
 .item-content{
   text-align: center;
@@ -1030,7 +1030,7 @@ button{
 #conference-timeline .timeline-end {
   display: table;
   font-family: "Roboto", sans-serif;
-  font-size: 18px;
+  font-size: 30px;
   font-weight: 900;
   text-transform: uppercase;
   padding: 15px 23px;
@@ -1108,6 +1108,25 @@ button{
 .timeline-article .content-left-container {
   float: left;
 }
+.content-left{
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all  0.3s ease;
+}
+/* .content-left:hover{
+  background: linear-gradient(to right,#0074BB 0%, #02CDFB 100%); 
+}
+.content-right:hover{
+  background: linear-gradient(to right,#0af163 0%, #385961 100%); 
+} */
+.content-right.active:hover{
+  background: linear-gradient(to right,#f35247 0%, #bd62b5 100%); 
+}
+.content-left.dx:hover{
+  background: linear-gradient(to right,#2380b9 0%, #8cd5e4 100%); 
+}
+
 .timeline-article .content-right-container {
   float: right;
 }
@@ -1123,6 +1142,7 @@ button{
   border-radius: 100%;
   background: #00b0bd;
 }
+
 .timeline-article .meta-date .date,
 .timeline-article .meta-date .month {
   display: block;
@@ -1355,15 +1375,15 @@ input[type="checkbox"]:checked + label::after {
 .event-button {
   display: inline-block;
   padding: .5em 4em;
-  border: 2px solid rgba(38, 191, 208, 0.6);
-  color: rgba(38, 191, 208, 0.6);
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.6);
   text-align: center;
   text-decoration: none;
   outline: none;
   transition: all .3s;
 }
 .event-button:hover {
-  box-shadow: 0 0 45px rgba(38, 191, 208, 0.6);
+  box-shadow: 0 0 45px rgba(255, 255, 255, 0.6);
 }
 
 .meta-date{
