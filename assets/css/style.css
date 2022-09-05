@@ -978,28 +978,35 @@ button{
 
 .birthday-bothside{
   display: flex;
-  margin-top: 10px;
-  
+  /* margin-top: 10px; */
   /* text-align: center; */
-  
+  /* width: 100vw; */
+  /* text-align: center; */
+  /* margin: 0% auto; */
 }
 
 .birthday-leftside{
   margin: auto 0;
-  margin-left: 50px;
+  /* margin-left: 20%; */
   margin-right: 0;
+  width: 50vw;
+  /* width: 50%; */
   /* transform:rotate(45deg); */
 }
 
 .birthday-rightside{
-  margin:auto 0;
-  margin-left: -125px;
+  margin: auto 0;
+  /* margin-left: 100px; */
   margin-top: 300px;
+  /* padding-top: 600px;  */
+  /* list-style: none;  */
+  /* border-left: outset #00b0bd 14px;  */
+  /* margin-right: 100%;  */
+  /* margin-left: 150px; */
+  width: 50vw;
 
-  /* padding-top: 600px; */
-  /* list-style: none; */
-  /* border-left: outset #00b0bd 14px; */
-  /* padding-left: 0px; */
+  /* padding-left: 0; */
+  /* width: 50%; */
   /* transform:rotate(45deg); */
 }
 
@@ -1018,8 +1025,13 @@ button{
   /* background-color: #A7CEEF; */
   /* display: grid;
   grid-template-columns: 3fr,5fr; */
-
 }
+
+/* #app{
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+} */
 
 .birthday-item{
   /* margin: 0px 0px 0% 0%; */
@@ -1034,7 +1046,79 @@ button{
   font-size: 25px;
   color: white;
   box-shadow: 3px 0px 80px rgba(132, 167, 192, 0.86);
+  transition: 1s;
+  cursor: pointer
 }
+
+
+
+.hidden-box{
+  margin: 2em 0;
+  padding: 0;
+}
+.hidden-box.left-side{
+  float: right;
+}
+/* .hidden-box.right-side{
+  float: left;
+} */
+
+
+.hidden-box input{
+  display: none;
+}
+.img-birth{
+  background: url(../img/ayumi.fujii-speech.png);
+}
+
+.hidden-box .hidden-show {
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: 0.8s;
+}
+
+.hidden-box input:checked ~ .hidden-show {
+  padding: 10px 0;
+  height: auto;
+  opacity: 1;
+}
+
+.hidden-box {
+  margin: 2em 0;/*前後の余白*/
+  /* padding: 0; */
+  display: flex;
+}
+
+.birthday-item:hover{
+  background: hsl(207, 69%, 80%);
+  /* animation:animate01 2s linear 1s; */
+}
+
+/* @keyframes animate01{
+0%{
+
+  }
+100%{
+
+  }
+} */
+
+/* .circle {
+  width: 50px;
+  height: 50px;
+  margin: 10px 10px 10px auto;
+  border-radius: 50%;
+  background-color: #384878;
+  transition: 1s;
+  cursor: pointer;
+} */
+
+/* .circle.is-animated {
+  transform: scale(100);
+} */
+
 
 /* .birthday-item:before{
   content: "";
