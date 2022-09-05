@@ -1022,9 +1022,20 @@ button{
   height: 100%;
   z-index: 0;
   background: url(../img/branch-new.png);
-  background-color: rgba(210, 222, 242, 0);
-  
-  
+}
+
+.birthday-bothside::after{
+  content: "";
+  position: absolute;
+  margin-left: 25%;
+  /* margin-right: 20%; */
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  z-index: 0;
+  background-color: rgba(0, 0, 0, 0.13);
+
 }
 
 .birthday-leftside{
@@ -1032,6 +1043,7 @@ button{
   /* margin-left: 20%; */
   margin-right: 0;
   width: 50vw;
+  z-index: 6;
   /* width: 50%; */
   /* transform:rotate(45deg); */
 }
@@ -1046,7 +1058,7 @@ button{
   /* margin-right: 100%;  */
   /* margin-left: 150px; */
   width: 50vw;
-
+  z-index: 6;
   /* padding-left: 0; */
   /* width: 50%; */
   /* transform:rotate(45deg); */
@@ -1083,7 +1095,8 @@ button{
   color: white;
   box-shadow: 3px 0px 80px rgba(132, 167, 192, 0.86);
   transition: 1s;
-  cursor: pointer
+  cursor: pointer;
+
 }
 
 
@@ -1111,6 +1124,7 @@ button{
   overflow: hidden;
   opacity: 0;
   transition: 0.8s;
+  z-index: 5;
 }
 
 .hidden-box input:checked ~ .hidden-show {
@@ -1129,6 +1143,35 @@ button{
   background: hsl(207, 69%, 80%); 
   animation:animate01 2s linear 1s; 
 }
+
+.main-second{
+  margin-top: 100px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.birthday-cards{
+  width: 350px;
+  height: 90%;
+  margin-left: -5%;
+}
+
+.main-below-below{
+  display: flex;
+  border-color: ;
+}
+
+.main-below{
+  background-color:hsl(204, 17%, 94%);
+  padding: 20px 20px 20px 20px;
+  border-radius: 10px;
+  border-color: #c77a7c;
+}
+
+.main-below-text{
+  padding-top: 10%;
+}
+
 
 /* event-css */
 
