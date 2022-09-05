@@ -792,7 +792,9 @@ p.button:hover{
   text-indent: 5em;
   margin-bottom: 10px;
 }
-
+.speech-contents{
+  font-size: 14px;
+}
 .speech-box{
   display:  grid;
   margin: 2%  7%;
