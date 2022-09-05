@@ -450,7 +450,7 @@ praise
 .praise{}
 .background-img{
   background-color: #D5B795;
-  height: 630px;
+  /* height: 630px; */
   width: 100%;
 }
 .praise-title{
