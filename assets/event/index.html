@@ -72,20 +72,40 @@
           <div class="content-left" id="content-img">
             <p><span class="article-number"></span></p><img class="img-bbq" src="../img/LINE_ALBUM_220904.jpg" alt="">
           </div>
-          <span class="timeline-author">いいねボタン</span>
+          <span class="timeline-author">
+            <div id="app" class="app">
+              <vue-star animate="animated rubberBand" color="#F05654">
+                <a slot="icon" class="fa fa-heart" @click="handleClick"></a>
+              </vue-star>
+              <vue-star animate="animated shake" color="#5654F0">
+                <a slot="icon" class="fa fa-thumbs-up" @click="handleClick"></a>
+              </vue-star>
+            </div>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/vue-star@0.0.4/dist/VueStar.js"></script>
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
+
+
+          </span>
         </div>
         <div class="meta-date">
           <span class="date">25</span>
           <span class="month">JUN</span>
         </div>
         <div class="content-right-container">
-          <div class="content-right">
+          <div class="content-right" id="content-bbq">
             <p><span class="article-number">BBQ</span></p>
             <div class="balloon1-left">
-              <p>最高のイベントだったっっっっっっっっっっっk</p>
+              <p>最高のイベントだったっっっっっっっっっっっ</p>
             </div>
-            <div class="balloon1-left">
-              <p>こんにちは。これは例です。</p>
+            <div class="balloon1-left" id="event-comment">
+              <p>BBQしか勝たん</p>
+            </div>
+            <div class="balloon1-left" id="event-comment">
+              <p>初めてリアイベで合ったことない人とたくさん会えて嬉しかった！！</p>
+            </div>
+            <div class="balloon1-left" id="event-comment">
+              <p>肉うますぎ</p>
             </div>
           </div>
           <span class="timeline-author"></span>
@@ -103,10 +123,16 @@
           <div class="content-left">
             <p><span class="article-number">かだチョキ</span></p>
             <div class="balloon1-right">
-              <p>めちゃくちゃ進んで最高の気分です。本当にありがとうございました</p>
+              <p>めちゃくちゃ進んで最高の気分です。本当にありがとうございました。</p>
             </div>
-            <div class="balloon1-right">
-              <p>こんにちは。これは例です。</p>
+            <div class="balloon1-right" id="event-comment">
+              <p>最近やる気なかったのですがこのリアイベに行ってモチベを保ち直しました。</p>
+            </div>
+            <div class="balloon1-right" id="event-comment">
+              <p>先輩といろんな人に久々にたくさん会えて嬉しかった！！</p>
+            </div>
+            <div class="balloon1-right" id="event-comment">
+              <p>ニモ可愛いnimokawaiiニモ可愛い</p>
             </div>
             <p><span class="article-number"></span></p>
           </div>
@@ -116,7 +142,8 @@
           <div class="content-right" id="content-img">
             <p><span class="article-number"></span></p><img class="img-kadachoki" src="../img/LINE_ALBUM_220904_1.jpg" alt="">
           </div>
-          <span class="timeline-author"></span>
+          <span class="timeline-author">
+          </span>
         </div>
         <div class="meta-date">
           <span class="date">24</span>
@@ -131,16 +158,23 @@
           <div class="content-left" id="content-img">
             <p><span class="article-number"></span></p><img class="img-summerdx" src="../img/LINE_ALBUM_220904_2.jpg" alt="">
           </div>
-          <span class="timeline-author"></span>
+          <span class="timeline-author">
+          </span>
         </div>
         <div class="content-right-container">
           <div class="content-right">
             <p><span class="article-number">夏のDX</span></p>
             <div class="balloon1-left">
-              <p>最高のイベントだったっっっっっっっっっっっk</p>
+              <p>激アツイベント</p>
             </div>
-            <div class="balloon1-left">
-              <p>こんにちは。これは例です。</p>
+            <div class="balloon1-left" id="event-comment">
+              <p>夏さいっっっっこおおおおお！！！</p>
+            </div>
+            <div class="balloon1-left" id="event-comment">
+              <p>夏の終わりに最高の思い出🔥🔥🔥🔥</p>
+            </div>
+            <div class="balloon1-left" id="event-comment">
+              <p>瀬谷遠すぎです</p>
             </div>
           </div>
           <span class="timeline-author"></span>
