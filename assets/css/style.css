@@ -1022,8 +1022,8 @@ button{
 }
 
 .img-birth{
-  background: url(../img/ayumi.fujii-speech.png);
-}
+  background: url(../img/ayumi.fujii-speech.png); 
+ }
 
 .hidden-box .hidden-show {
   height: 0;
@@ -1039,15 +1039,15 @@ button{
   opacity: 1;
 }
 
-.hidden-box {
-  margin: 2em 0;/*前後の余白*/
-  /* padding: 0; */
+.hidden-box { 
+  margin: 2em 0;
+  padding: 0; 
   display: flex;
 }
 
 .birthday-item:hover{
-  background: hsl(207, 69%, 80%);
-  /* animation:animate01 2s linear 1s; */
+  background: hsl(207, 69%, 80%); 
+  animation:animate01 2s linear 1s; 
 }
 
 /* event-css */
@@ -1222,7 +1222,7 @@ button{
 /*===== // Vertical Timeline =====*/
 
 /*===== Resonsive Vertical Timeline =====*/
-@media only screen and (max-width: 830px) {
+@media only screen and (max-width: 720px) {
   #conference-timeline .timeline-start,
   #conference-timeline .timeline-end {
     margin: 0;
@@ -1260,7 +1260,7 @@ button{
     display: none;
   }
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 480px) {
   .timeline-article top {
     margin: 0;
   }
