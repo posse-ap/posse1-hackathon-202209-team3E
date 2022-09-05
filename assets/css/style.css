@@ -71,12 +71,10 @@ img{
 
 /* footer */
 .footer-under-line{
-  /* position: relative; */
   border: #eee solid 0.1px;
   margin: 0 0 20px 0;
 }
 .footer{
-  /* position: absolute; */
   width: 100%;
   text-align: center;
 }
@@ -157,17 +155,6 @@ i, .icomoon-liga {
 /*
 modal
 */
-/* const $container = $('.overlay')
-  const $button = $('.js-openModal')
-  const $closeButton = $('.js-closeModal')
-
-  $button.click((e) => {
-    $container.addClass('openModal')
-  })
-
-  $closeButton.click(() => {
-    $container.removeClass('openModal')
-  }) */
 .modal{
   display: none;
   position: absolute; 
@@ -290,6 +277,41 @@ modal-loading
   100%{-webkit-transform:rotate(360deg)}
 }
 
+/* 
+fade-in 
+*/
+
+.fade-in-left{ 
+  animation-name:fadein-from-left;
+  animation-duration:2.5s; 
+  animation-fill-mode: forwards;
+}
+@keyframes fadein-from-left {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100%{
+    opacity: 0.95;
+    transform: translateX(0);
+  } 
+}
+.fade-in-right{ 
+  animation-name:fadein-from-right;
+  animation-duration:2.5s; 
+  animation-fill-mode: forwards;
+}
+@keyframes fadein-from-right {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0);
+  } 
+}
+
 
 /* top-css */
 
@@ -343,22 +365,18 @@ seventh-habit
   margin: auto 0;
   max-height: 793px;
 }
-/* .habit-list{} */
 .habit-items{
   padding: 15px 15px ;
   background-color: #e9e8e8;
-  opacity: 0.6;
   border-radius: 16px;
   margin: 15px;
   letter-spacing: 0.1em;
   cursor: pointer;
 }
 .habit-items:hover{
-  background-color: #fff;
+  background-color: rgba(96, 112, 218, 0.8);
   opacity: 1;
 }
-/* .habit-title{} */
-/* .habit-contents{} */
 
 /*
 html-link 
@@ -447,7 +465,7 @@ html-link
 /* 
 praise
 */
-.praise{}
+/* .praise{} */
 .background-img{
   background-color: #D5B795;
   /* height: 630px; */
@@ -460,7 +478,7 @@ praise
   border-bottom: 2px solid #fff;
   width: 30%;
 }
-.praise-wrapper{}
+/* .praise-wrapper{} */
 .praise-devided{
   display: grid;
   grid-template-columns:repeat(3,1fr);
@@ -502,7 +520,7 @@ html-link-responsive
     display: block;
   }
   .link-items{
-    height: 300px;
+    height: 150px;
     font-size: 80%;
   }
   .items-title{
@@ -525,7 +543,25 @@ html-link-responsive
   .praise-title{
     font-size: 18px;
   }
+  .top-title{
+    font-size: 20px;
+    top: 30px;
+    left: 20%;
+    text-align: center;
+  }
+  .habit-both-side{
+    height: 620px;
+  }
+  .habit-list{
+    padding-left: 0;
+  }
+  .habit-items{
+    padding: 5px 10px;
+    font-size: 80%;
+    margin:15px 15px;
+  }
 }
+
 /* 
 humburger-button
 */
