@@ -1055,10 +1055,11 @@ button{
 .event-top-wapper{
   display: grid;
   grid-template-columns: repeat(2,1fr);
-  margin-top: 79px;
+  margin-top: 100px;
   margin-bottom: 100px;
-  /* display: flex; */
-  background-color: #E8FFEB;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: #b9d7b9;
 }
 
 .event-title{
@@ -1219,10 +1220,38 @@ button{
   font-size: 18px;
   line-height: 10px;
 }
+
+@media screen and (max-width: 720px) {
+  .timeline-article p span.article-number {
+    font-size: 30px;
+  }
+  .balloon1-left p {
+    font-size: 12px;
+  }
+  .balloon1-right p {
+    font-size: 12px;
+  }
+  #conference-timeline .timeline-start,
+  #conference-timeline .timeline-end {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .timeline-article p span.article-number {
+    font-size: 15px;
+  }
+  .balloon1-left p {
+    font-size: 8px;
+  }
+  .balloon1-right p {
+    font-size: 8px;
+  }
+}
 /*===== // Vertical Timeline =====*/
 
 /*===== Resonsive Vertical Timeline =====*/
-@media only screen and (max-width: 830px) {
+@media only screen and (max-width: 720px) {
   #conference-timeline .timeline-start,
   #conference-timeline .timeline-end {
     margin: 0;
@@ -1251,23 +1280,19 @@ button{
     padding: 10px 25px;
     min-height: 65px;
   }
-  .timeline-article .content-left:before {
+  /* .timeline-article .content-left:before {
     content: "\f0d9";
     right: auto;
     left: -8px;
   }
   .timeline-article .content-right:before {
     display: none;
-  }
+  } */
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 480px) {
   .timeline-article top {
     margin: 0;
   }
-  .timeline-article p span.article-number {
-    display: none;
-  }
-  
 }
 
 
