@@ -1037,7 +1037,7 @@ button{
   width: 50%;
   height: 100%;
   z-index: 0;
-  background-color: rgba(0, 0, 0, 0.13);
+  background-color: rgba(0, 0, 0, 0.15);
 
 }
 
@@ -1174,6 +1174,9 @@ button{
   padding-top: 10%;
 }
 @media screen and (max-width: 720px) {
+  .main-wapper{
+    width: 100vw;
+  }
   .birthday-top-wapper{
     display: block; 
     padding-top: 20px;
@@ -1190,7 +1193,43 @@ button{
     top: 10%;
     font-size: 23px;
   }
+  .birthday-item{
+    padding-bottom: 0;
+  }
+  .hidden-box{
+
+  }
+  .birthday-bothside{
+    margin: 0;
+  }
+  .hidden-box.left-side{
+    float: right;
+  }
+  .hidden-box.right-side{
+    float: left;
+    margin-right: 20%;
+  }
+  .birthday-item:first-child{
+    margin-left: 15%;
+  }
+  .birthday-item:nth-child(5){
+    margin-right: 20px;
+  }
+  .birthday-detail1{
+    font-size: 20px;
+  }
+  .background-birth{
+    width: 90px;
+  }
+  .main-below-below{
+    display: block;
+  }
+  .main-below-text{
+    font-size: 12px;
+  }
+
 }
+
 
 /* event-css */
 
