@@ -971,6 +971,9 @@ button.more.on-click::after{
 }
 
 
+
+
+
 /* birthday-css */
 
 .birthday-top-wapper{
@@ -984,19 +987,41 @@ button.more.on-click::after{
   /* display: flex; */
 }
 
+
+/* body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
 .birthday-bothside{
   display: flex;
+  margin-top: 10px;
+  
   /* text-align: center; */
+  
 }
 
 .birthday-leftside{
   margin: auto 0;
-  margin-left: px;
+  margin-left: 50px;
+  margin-right: 0;
+  /* transform:rotate(45deg); */
 }
 
 .birthday-rightside{
-  margin: auto 0;
-  margin-left: 200px;
+  margin:auto 0;
+  margin-left: -125px;
+  margin-top: 300px;
+
+  /* padding-top: 600px; */
+  /* list-style: none; */
+  /* border-left: outset #00b0bd 14px; */
+  /* padding-left: 0px; */
+  /* transform:rotate(45deg); */
 }
 
 .birthday-card{
@@ -1007,22 +1032,81 @@ button.more.on-click::after{
 
 .card-title{
   text-indent: 2em;
+  transform:rotate(-45deg);
 }
 
 .birthday-set{
   /* background-color: #A7CEEF; */
   /* display: grid;
   grid-template-columns: 3fr,5fr; */
+
 }
 
 .birthday-item{
-  margin-bottom: 30%;
-  margin-left: 7%;
-  margin-right: 7%;
-  background-color: #A7CEEF;
+  /* margin: 0px 0px 0% 0%; */
+  background-color: hsl(207, 69%, 80%);
+  background-image: url(../img/birthday-top-img.png);
   border-radius: 10px;
-  padding: 20px 60px 15px 20px;
+  padding: 20px 0px 15px 0px;
+  transform:rotate(45deg);
+  transform-origin:0 0;
+  margin-bottom:4em;
+  margin-left: 100px;
+  font-size: 25px;
+  color: white;
+  box-shadow: 3px 0px 80px rgba(132, 167, 192, 0.86);
 }
+
+/* .birthday-item:before{
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #000;
+  position: absolute; 
+  left: calc(-2em - 6px);
+  top: .7em;
+}
+.birthday-item:after{
+  content: "";
+  border-bottom: 1px solid;
+  width: 1.5em;
+  background: #000;
+  position: absolute;
+  top: 1em;
+  left: -2em;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* event-css */
 
