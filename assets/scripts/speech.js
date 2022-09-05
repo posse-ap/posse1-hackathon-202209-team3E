@@ -40,4 +40,5 @@
   $closeButton.click(() => {
     $container.removeClass('openModal')
   })
+
 }
