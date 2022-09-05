@@ -1298,6 +1298,7 @@ button{
 #timeline-start-year{
   background-color: #00b0bd;
 }
+
 Result Skip Results Iframe
 EDIT ON
 body {
@@ -1348,20 +1349,21 @@ input[type="checkbox"]:checked + label::after {
   top: -10px;
   left: -4px;
   z-index: -100;
-}
+} 
+
 
 .event-button {
   display: inline-block;
   padding: .5em 4em;
-  border: 2px solid rgb(209, 242, 239);
-  color: rgb(173, 227, 235);
+  border: 2px solid rgba(38, 191, 208, 0.6);
+  color: rgba(38, 191, 208, 0.6);
   text-align: center;
   text-decoration: none;
   outline: none;
   transition: all .3s;
 }
 .event-button:hover {
-  box-shadow: 0 0 45px rgba(159, 220, 227, 0.6);
+  box-shadow: 0 0 45px rgba(38, 191, 208, 0.6);
 }
 
 .meta-date{
@@ -1376,7 +1378,7 @@ input[type="checkbox"]:checked + label::after {
   transition: transform .6s ease; /* ゆっくり変化させる */
 }
 
-.meta-date:hover + .content-left {
-  transform:scale(1.2,1.2);
+.content-right:hover + .content-right {
+  transform:scale(1.2);
 }
 /*===== // Resonsive Vertical Timeline =====*/
