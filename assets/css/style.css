@@ -1315,6 +1315,23 @@ button{
   #conference-timeline .timeline-end {
     font-size: 20px;
   }
+
+  .event-top-wapper{
+    display: block; 
+    padding-top: 20px;
+  }
+  .speech-top-img {
+    width: 600px;
+    height: 500px;
+  }
+  .speech-titles{
+    font-size: 80%;
+    margin-top: 15%;
+  }
+  .speech-titles-detail{
+    top: 10%;
+    font-size: 23px;
+  }
 }
 
 @media screen and (max-width: 480px) {
