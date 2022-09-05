@@ -935,6 +935,37 @@ button{
   /* display: flex; */
 }
 
+.background-birth{
+  background: url(../img/birthday-top-img.png) center center/cover;
+  /* background-size: cover; */
+  overflow: hidden;
+  display: flex;
+  position: relative;
+  width: 100%;
+  font-family: normal;
+  /* font-weight: bold; */
+  font-size: 30px;
+  padding: 30px 30px 30px 30px;
+}
+
+.background-birth::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.birthday-detail1{
+  z-index: 1;
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+
+}
+
 .birthday-bothside{
   display: flex;
   /* margin-top: 10px; */
@@ -942,6 +973,32 @@ button{
   /* width: 100vw; */
   /* text-align: center; */
   /* margin: 0% auto; */
+  /* color: #911212; */
+  /* background-size: cover; */
+  overflow: hidden;
+  position: relative;
+  width: 86%;
+  /* background:url(../img/git-branch.png) center center/cover;; */
+  /* margin-left: 100px; */
+  background-color: rgba(220, 237, 249, 0.853);
+  margin: 0 6.8%;
+  border-radius: 10px;
+}
+
+.birthday-bothside::before{
+  content: "";
+  position: absolute;
+  margin-left: 25%;
+  /* margin-right: 20%; */
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  z-index: 0;
+  background: url(../img/branch-new.png);
+  background-color: rgba(210, 222, 242, 0);
+  
+  
 }
 
 .birthday-leftside{
@@ -1021,9 +1078,6 @@ button{
   display: none;
 }
 
-.img-birth{
-  background: url(../img/ayumi.fujii-speech.png); 
- }
 
 .hidden-box .hidden-show {
   height: 0;
