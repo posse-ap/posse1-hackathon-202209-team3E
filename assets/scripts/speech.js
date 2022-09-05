@@ -47,7 +47,7 @@
     $setTime = setTimeout(function(){
         $('#loading').css("display","none");
         $('#access-record').css("display","block");
-    },3000);
+    },2500);
   });
 
   $('.js-closeModal').on('click',function(){
