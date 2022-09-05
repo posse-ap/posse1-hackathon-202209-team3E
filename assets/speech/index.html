@@ -88,13 +88,13 @@
       </div>
 
       <section class="speech-section">
-        <h2 class="speech-subtitle">仲間の居場所を作らずして自分の居場所なし</h2>
+        <h2 class="speech-subtitle">《仲間の居場所を作らずして自分の居場所なし》</h2>
         <div class="speech-box">
           <div class="speech-items">
             <figure>
               <img class="speech-icon" src="../img/yuta.honnjyo-speech.png" alt="">
             </figure>
-            <span class="ribbon15">NEW</span>
+            <span class="ribbon15" id="speech1">NEW</span>
             <div class="speech-content">
               <h3>本庄裕大</h3>
               <p class="speech-contents">
@@ -109,9 +109,9 @@
             <figure>
               <img class="speech-icon" src="../img/hiroki.ogawa-speech.jpeg" alt="">
             </figure>
-            <span class="ribbon15">NEW</span>
+            <span class="ribbon15" id="speech2">NEW</span>
             <div class="speech-content">
-              <h3>小川ひろき</h3>
+              <h3>小川広樹</h3>
               <p class="speech-contents">
                 スピーチ内容記述
               </p>
@@ -123,7 +123,7 @@
             <figure>
               <img class="speech-icon" src="../img/yuma.tukagaoshi-speech.png" alt="">
             </figure>
-            <span class="ribbon15">NEW</span>
+            <span class="ribbon15" id="speech3">NEW</span>
             <div  class="speech-content">
               <h3>塚越雄真</h3>
               <p class="speech-contents">
@@ -136,13 +136,13 @@
       </section>
 
       <section class="speech-section">
-        <h2 class="speech-subtitle">教えることは教わること</h2>
+        <h2 class="speech-subtitle">《教えることは教わること》</h2>
         <div class="speech-box"> 
         <div class="speech-items">
             <figure>
               <img class="speech-icon" src="../img/chiyoko.hayashi-speech.png" alt="">
             </figure>
-            <span class="ribbon15">NEW</span>
+            <span class="ribbon15" id="speech4">NEW</span>
             <div  class="speech-content">
               <h3>林千翼子</h3>
               <p class="speech-contents">
@@ -155,7 +155,7 @@
             <figure>
               <img class="speech-icon" src="../img/kazuki.iwashiro-speech.jpeg" alt="">
             </figure>
-            <span class="ribbon15">NEW</span>
+            <span class="ribbon15" id="speech5">NEW</span>
             <div class="speech-content">
               <h3>岩城和輝</h3>
               <p class="speech-contents">
@@ -169,7 +169,7 @@
             <figure>
               <img class="speech-icon" src="../img/michiko.noro-speech.jpeg" alt="">
             </figure>
-            <span class="ribbon15">NEW</span>
+            <span class="ribbon15" id="speech6">NEW</span>
             <div  class="speech-content">
               <h3>野呂美智子</h3>
               <p class="speech-contents">
@@ -182,13 +182,13 @@
       </section>
 
       <section class="speech-section">
-        <h2 class="speech-subtitle">本音の対話なくして最高のチームなし</h2>
+        <h2 class="speech-subtitle">《本音の対話なくして最高のチームなし》</h2>
         <div class="speech-box"> 
           <div class="speech-items">
             <figure>
               <img class="speech-icon" src="../img/ayumi.fujii-speech.png" alt="">
             </figure>
-            <span class="ribbon15">NEW</span>
+            <span class="ribbon15" id="speech7">NEW</span>
             <div  class="speech-content">
               <h3>藤井愛弓</h3>
                 <p class="speech-contents">
@@ -201,7 +201,7 @@
             <figure>
               <img class="speech-icon" src="../img/yudai.inose-speech.png" alt="">
             </figure>
-            <span class="ribbon15">NEW</span>
+            <span class="ribbon15" id="speech8">NEW</span>
             <div class="speech-content">
               <h3>猪瀬雄大</h3>
               <p class="speech-contents">
@@ -215,7 +215,7 @@
           <div class="speech-items">
             <figure>
               <img class="speech-icon" src="../img/gaku.inoue-speech.png" alt="">
-              <span class="ribbon15">NEW</span>
+              <span class="ribbon15" id="speech9">NEW</span>
             </figure>
             <div  class="speech-content">
               <h3>井上岳</h3>
@@ -229,28 +229,28 @@
       </section>
       <section class="speech-forms">
         <h1 class="form-title">100秒スピーチ投稿フォーム</h1>
-        <form class="from" onsubmit="return false;" onsubmit="return confirm('送信しますか？');">
+        <form class="from" onsubmit="return false;" name="input">
           <div class="speech-form">
             <label class="label">名前<span class="required">*</span></label>
             <div class="input-box">
-              <input class="speech-form border" type="text" name="input" autocomplete="name" placeholder="お名前" required="required"/>
+              <input class="speech-form border" type="text"  autocomplete="name" placeholder="お名前" id="text"/>
             </div>
           </div>
 
           <div class="speech-form">
             <label class="label">テーマ<span class="required">*</span></label>
             <div class="input-box">
-              <input class="speech-form border" type="text" name="input" autocomplete="name" placeholder="テーマ" required="required"/>
+              <input class="speech-form border" type="text"  autocomplete="name" placeholder="テーマ" id="text" />
             </div>
           </div>
           <div class="speech-form">
             <label class="label">本文<span class="required">*</span></label>
             <div class="input-box">
-              <input class="speech-form border" type="text" name="input" autocomplete="name" placeholder="本文" required="required"/>
+              <input class="speech-form border" type="text"  autocomplete="name" placeholder="本文"/>
             </div>
           </div>
           <div class="speech-submit js-openModal" id="record-modalButton">
-            <button class="js-openModal" id="record-modalButton">送信する</button>
+            <button type="button" class="js-openModal" id="record-modalButton" onclick="reset()">送信する</button>
           </div>
         </form>
       </section>
