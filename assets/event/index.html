@@ -63,7 +63,7 @@
     </div>
   <!-- Vertical Timeline -->
     <section id="conference-timeline">
-    <div class="timeline-start">2022</div>
+    <div class="timeline-start" id="timeline-start-year">2022</div>
     <div class="conference-center-line"></div>
     <div class="conference-timeline-content">
       <!-- Article -->
@@ -73,17 +73,8 @@
             <p><span class="article-number"></span></p><img class="img-bbq" src="../img/LINE_ALBUM_220904.jpg" alt="">
           </div>
           <span class="timeline-author">
-            <div id="app" class="app">
-              <vue-star animate="animated rubberBand" color="#F05654">
-                <a slot="icon" class="fa fa-heart" @click="handleClick"></a>
-              </vue-star>
-              <vue-star animate="animated shake" color="#5654F0">
-                <a slot="icon" class="fa fa-thumbs-up" @click="handleClick"></a>
-              </vue-star>
-            </div>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js"></script>
-            <script src="https://cdn.jsdelivr.net/npm/vue-star@0.0.4/dist/VueStar.js"></script>
-            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
+        
+            <input type="checkbox" id="like"><label for="like"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg></label>
 
 
           </span>
@@ -136,13 +127,15 @@
             </div>
             <p><span class="article-number"></span></p>
           </div>
-          <span class="timeline-author"></span>
+          <span class="timeline-author">
+          </span>
         </div>
         <div class="content-right-container">
           <div class="content-right" id="content-img">
             <p><span class="article-number"></span></p><img class="img-kadachoki" src="../img/LINE_ALBUM_220904_1.jpg" alt="">
           </div>
           <span class="timeline-author">
+            <input type="checkbox" id="like"><label for="like"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg></label>
           </span>
         </div>
         <div class="meta-date">
@@ -159,6 +152,7 @@
             <p><span class="article-number"></span></p><img class="img-summerdx" src="../img/LINE_ALBUM_220904_2.jpg" alt="">
           </div>
           <span class="timeline-author">
+            <input type="checkbox" id="like"><label for="like"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg></label>
           </span>
         </div>
         <div class="content-right-container">
@@ -190,7 +184,7 @@
       <div class="timeline-article">
         <div class="content-right-container">
           <div class="content-right">
-            <p>どんどんみんな参加しよう！参加はこちらから<span class="article-number" id="article-number-next">運動会</span></p>
+            <p id="event-yokoku"><a class="event-button" href="https://event.posse-ap.com/login">参加はこちらから</a><span class="article-number" id="article-number-next">運動会</span></p>
           </div>
           <span class="timeline-author"></span>
         </div>
@@ -205,7 +199,7 @@
             <div class="timeline-article">
               <div class="content-left-container">
                 <div class="content-left">
-                  <p>　　　　　　　みんな参加しよう！参加はこちらから<span class="article-number" id="article-number-next">冬のDX</span></p>
+                  <p id="event-yokoku"><a class="event-button" href="https://event.posse-ap.com/login">参加はこちらから</a><span class="article-number" id="article-number-next">冬のDX</span></p>
                 </div>
                 <span class="timeline-author"></span>
               </div>
