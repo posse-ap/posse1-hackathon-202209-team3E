@@ -1144,6 +1144,35 @@ button{
   animation:animate01 2s linear 1s; 
 }
 
+.main-second{
+  margin-top: 100px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.birthday-cards{
+  width: 350px;
+  height: 90%;
+  margin-left: -5%;
+}
+
+.main-below-below{
+  display: flex;
+  border-color: ;
+}
+
+.main-below{
+  background-color:hsl(204, 17%, 94%);
+  padding: 20px 20px 20px 20px;
+  border-radius: 10px;
+  border-color: #c77a7c;
+}
+
+.main-below-text{
+  padding-top: 10%;
+}
+
+
 /* event-css */
 
 .event-top-wapper{
