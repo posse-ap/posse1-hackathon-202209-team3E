@@ -718,6 +718,10 @@ humburger-button
   font-size: 40px;
   border-bottom: 2px solid white;
 }
+.speech-section{
+  margin: 10px;
+  padding-bottom: 50px;
+}
 
 .speech-items {  
   display: block;
@@ -790,7 +794,7 @@ p.button:hover{
 
 .speech-subtitle{
   text-indent: 5em;
-  margin-bottom: 10px;
+  margin: 20px  0;
 }
 .speech-contents{
   font-size: 14px;
@@ -966,16 +970,6 @@ button{
   /* display: flex; */
 }
 
-
-/* body {
-  min-height: 100vh;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
-
 .birthday-bothside{
   display: flex;
   margin-top: 10px;
@@ -1014,12 +1008,6 @@ button{
   transform:rotate(-45deg);
 }
 
-.birthday-set{
-  /* background-color: #A7CEEF; */
-  /* display: grid;
-  grid-template-columns: 3fr,5fr; */
-
-}
 
 .birthday-item{
   /* margin: 0px 0px 0% 0%; */
@@ -1035,58 +1023,6 @@ button{
   color: white;
   box-shadow: 3px 0px 80px rgba(132, 167, 192, 0.86);
 }
-
-/* .birthday-item:before{
-  content: "";
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: #000;
-  position: absolute; 
-  left: calc(-2em - 6px);
-  top: .7em;
-}
-.birthday-item:after{
-  content: "";
-  border-bottom: 1px solid;
-  width: 1.5em;
-  background: #000;
-  position: absolute;
-  top: 1em;
-  left: -2em;
-} */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* event-css */
 
 .event-top-wapper{
